@@ -90,11 +90,11 @@ main ul li {
 }
 
 main ul li a {
-    color: #EF233C;
+    color: #00BFF3 ;
 }
 
 main ul li a:hover {
-    color: #00BFF3;
+    color: #EF233C;
 }
 
 main .content-wrapper p {

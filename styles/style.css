@@ -8,7 +8,6 @@ body {
     background-color: #ffff; 
     margin: 0;
     padding: 0;
-    position: relative;
     display: flex;
 }
 
@@ -82,7 +81,8 @@ main .content-wrapper p::before {
 }
 
 main nav {
-    margin: 30px;
+    margin: 0 30px;
+    display: inline-block;
 }
 
 main ul li {
@@ -109,7 +109,7 @@ main .content-wrapper p::before {
     top: -10px;
 }
 
-footer {
+footer .footer-wrapper {
     background-color: #3377AA;
     border-radius: 20px;
     box-shadow: 5px 5px 10px #30303049;
@@ -133,3 +133,38 @@ footer #footer-updated span {
     font-style: italic;
     color: #e6d223;
 }
+
+/* ---Tablet View--- */
+
+@media screen and (max-width: 650px) {
+
+    .page-wrapper {
+        margin: 30px;
+    }
+  }
+
+/* ---Phone View--- */
+
+@media screen and (max-width: 450px) {
+
+    body {
+        display: inline-block;
+    }
+
+    header .header-wrapper a {
+        grid-template-columns: 30% 70%;
+    }
+
+    main {
+        text-align: center;
+    }
+
+    main .content-title::after {
+        top: 120px;
+    }
+
+    footer {
+        padding-bottom: 30px;
+    }
+
+  }

@@ -1,0 +1,135 @@
+/* *****IMPORTS***** */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* *****UNIVERSAL STYLING***** */
+body {
+    font-size: 22px;
+    background-color: #ffff; 
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: flex;
+}
+
+* {
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-size: 16px;
+    color: #303030;
+    letter-spacing: 4px;   
+}
+
+ h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;  
+    letter-spacing: 6px;
+    color: #303030;
+}
+
+.page-wrapper {
+    max-width: 650px;
+    margin: auto;
+    padding: 0;
+}
+
+header {
+    background-color: #3377AA;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #30303049;
+    padding: 30px;
+}
+
+header .header-wrapper a {
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    text-align: center;
+    align-items: center;
+}
+
+header .header-wrapper a img {
+    width: 100%;
+    grid-column: 1/2;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px #303030b1;
+}
+
+header .header-wrapper a h1 {
+    padding: 0 20px;
+    grid-column: 2/3;
+    margin: 0;
+    font-size: 2rem;
+    color: #fff;
+}
+
+main {
+    margin: 50px 20px;
+}
+
+main .content-title {
+    font-size: 1.7rem;
+    position: relative;
+}
+
+main .content-title::after,
+main .content-wrapper p::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #303030;
+    position: absolute;
+    left: 0;
+    top: 40px;
+}
+
+main nav {
+    margin: 30px;
+}
+
+main ul li {
+    margin-bottom: 5px;
+}
+
+main ul li a {
+    color: #EF233C;
+}
+
+main ul li a:hover {
+    color: #00BFF3;
+}
+
+main .content-wrapper p {
+    font-size: 1rem;
+    font-style: italic;
+    letter-spacing: 2px;
+    position: relative;
+    top: 10px;
+}
+
+main .content-wrapper p::before {
+    top: -10px;
+}
+
+footer {
+    background-color: #3377AA;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #30303049;
+    padding: 30px;
+    text-align: center;
+    letter-spacing: 2px;   
+}
+
+footer p,
+footer p span {
+    color: #fff;
+}
+
+footer #footer-copyright .copy-tree{
+    letter-spacing: 0px;
+}
+
+footer #footer-updated,
+footer #footer-updated span {
+    font-size: .8rem;
+    font-style: italic;
+    color: #e6d223;
+}

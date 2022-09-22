@@ -15,13 +15,14 @@ body {
 * {
     font-family: 'Open Sans', Helvetica, sans-serif;
     font-size: 16px;
+    font-weight: 500;
     color: #303030;
     letter-spacing: 4px;   
 }
 
  h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair Display', serif;  
-    letter-spacing: 6px;
+    letter-spacing: 4px;
     color: #303030;
 }
 
@@ -38,26 +39,29 @@ header {
     padding: 30px;
 }
 
-header .header-wrapper a {
-    text-decoration: none;
+header {
     display: grid;
     grid-template-columns: 20% 80%;
-    text-align: center;
-    align-items: center;
 }
 
-header .header-wrapper a img {
-    width: 100%;
+header a {
+    text-decoration: none;
     grid-column: 1/2;
+}
+
+header a img {
+    width: 100%;
     border-radius: 50%;
     box-shadow: 5px 5px 10px #303030b1;
 }
 
-header .header-wrapper a h1 {
+header h1 {
+    text-align: center;
     padding: 0 20px;
     grid-column: 2/3;
-    margin: 0;
-    font-size: 2rem;
+    margin: auto 0;
+    font-size: 2.5rem;
+    font-weight: 700;
     color: #fff;
 }
 
@@ -91,7 +95,7 @@ main ul li {
 }
 
 main ul li a {
-    color: #00BFF3 ;
+    color: #3377AA;
 }
 
 main ul li a:hover {
@@ -117,6 +121,10 @@ footer .footer-wrapper {
     padding: 30px;
     text-align: center;
     letter-spacing: 2px;   
+}
+
+footer a {
+    text-decoration: none;
 }
 
 footer p,
@@ -152,8 +160,14 @@ footer #footer-updated span {
         display: inline-block;
     }
 
-    header .header-wrapper a {
-        grid-template-columns: 30% 70%;
+    header {
+        grid-template-columns: 40% 60%;
+    }
+    header a {
+        display: flex;
+    }
+    header h1 {
+        text-align: left;
     }
 
     main {

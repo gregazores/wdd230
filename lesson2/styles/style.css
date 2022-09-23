@@ -45,6 +45,11 @@ header {
     padding: 50px 0
 }
 
+header .page-title-wrapper {
+    display: inline-block;
+    text-decoration: none;
+}
+
 header h1 {
     font-size: 3rem; 
     font-weight: 700;

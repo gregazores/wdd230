@@ -164,7 +164,7 @@ footer #footer-updated span {
         grid-template-columns: 40% 60%;
     }
     header a {
-        display: flex;
+        margin: auto;
     }
     header h1 {
         text-align: left;

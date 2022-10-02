@@ -6,8 +6,8 @@
 Some Color Palette:
 Primary: https://coolors.co/00171f-084b83-42bfdd-bbe6e4-f0f6f6
 #00171F, #084B83, #42BFDD, #BBE6E4, #F0F6F6
-Back-up: https://coolors.co/022b3a-1f7a8c-bfdbf7-e1e5f2
-#022B3A, #1F7A8C, #BFDBF7, #E1E5F2
+Back-up: https://coolors.co/022b3a-303030-1f7a8c-bfdbf7-e1e5f2
+#022B3A, #1F7A8C, #BFDBF7, #E1E5F2, #303030
 
 */
 /* *****UNIVERSAL STYLING***** */
@@ -46,15 +46,17 @@ body {
 
 header {
     display: grid;
-    background-color: #3377AA;
+    
+    background-color: #1F7A8C;
     box-shadow: 5px 5px 10px #30303049;
-    padding: 30px;
-    text-align: center;
-    padding: 50px 0
+    margin: 0;
+    padding: 0;
 }
 
 header .page-title-wrapper {
     display: inline-block;
+    margin: 50px auto 50px auto;
+    text-align: center;
     text-decoration: none;
 }
 
@@ -72,65 +74,72 @@ header h2 {
     margin-top: 20px;
 }
 
-.main-content .main-content-wrapper {
+.page-navigation {
+    background-color: #022B3A;
+}
+
+.page-navigation ul {
+    display: flex;
+    padding: 0;
+    text-align: center;
+    margin: 0;;
+}
+
+.page-navigation ul li:hover {
+    background-color: #E1E5F2;
+}
+
+.page-navigation ul li {
+    list-style: none;
     width: 100%;
-    margin: 30px 0;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 40px;
+    padding: 0;
 }
 
-.content-sections {
-    background-color: #f4f3f3;
-    border-radius: 10px 10px 0 0;
-    overflow: hidden;
-    box-shadow: 5px 5px 10px #30303049;
-    padding-bottom: 30px;
-}
-
-.content-sections h3 {
-    background-color: #303030;
-    padding: 10px 15px;
-    font-size: 1.4em;
-    line-height: 1.5rem;
-}
-
-.content-sections .company-name {
-    font-weight: 700;
-    margin-bottom: 0;
-}
-
-.content-sections .image-container img {
-    box-shadow: 5px 5px 10px #30303020;
-}
-
-.content-sections .company-info a {
+.page-navigation ul li a {
+    display: inline-flex;
+    color: #fff;
+    padding: 16px 0;
     text-decoration: none;
-    color: #3377AA;
-    font-style: italic;
 }
 
-.content-sections .company-info a:hover {
-    color: #EF233C;
+.page-navigation ul li:hover a {
+    color: #303030;
+    font-weight: 600;
 }
 
-.content-sections .company-info,
-.content-sections .explanation,
-.content-sections .image-container {
-    padding: 0 15px;
-    word-wrap: break-word;
+.main-content .main-content-wrapper {
+    width: 90%;
+    margin: 80px auto;
 }
 
-.content-sections .image-container {
-    margin: 20px 0;
+.page-sections h2,
+.page-sections h3{
+    font-weight: 700;
+    line-height: 1.9rem;
+    color: #303030;
 }
 
-.content-sections img {
+.bar-divider {
     width: 100%;
+    height: 2px;
+    background-color: #303030;
+    margin-top: 10px;
+}
+
+.page-sections h2 {
+    font-size: 1.7rem;
+}
+
+.page-sections h3 {
+    font-size: 1.4rem;
+}
+
+footer {
+    border-bottom: #022B3A solid 20px;
 }
 
 footer .footer-wrapper {
-    background-color: #3377AA;
+    background-color: #1F7A8C;
     box-shadow: 5px 5px 10px #30303049;
     padding: 30px;
     text-align: center;
@@ -156,6 +165,29 @@ footer #footer-updated span {
     font-style: italic;
     color: #fff;
 }
+
+
+/* *****MAIN PAGE STYLING***** */
+.page-sections.page-section-two {
+    margin: 40px 0;
+}
+
+/* *****Target Audience***** */
+
+.personas-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.personas-container h4 {
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-weight: 700;
+    color: #303030;
+}
+
+
+
+/* *****MOBILE VIEWS STYLING***** */ 
 
 /* ---Tablet View--- */
 

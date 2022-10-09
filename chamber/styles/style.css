@@ -37,6 +37,15 @@ body {
     line-height: 1.8rem;
 }
 
+ul li {
+    list-style: none;
+    color: #fff
+}
+
+a {
+    text-decoration: none;
+}
+
 .page-wrapper {
     width: 100%;
     margin: auto;
@@ -59,12 +68,7 @@ header nav ul {
     display: flex;
 }
 
-nav ul li {
-    list-style: none;
-}
-
 nav ul li a {
-    text-decoration: none;
     font-size: 1.5rem;
     color: #fff
 }
@@ -106,39 +110,52 @@ nav ul li a {
     background-color: rgba(255, 255, 255, 0.535);
 }
 
-
-
 footer {
-    border-bottom: #022B3A solid 20px;
-}
-
-footer .footer-wrapper {
     background-color: #1F7A8C;
-    box-shadow: 5px 5px 10px #30303049;
-    padding: 30px;
+}
+
+.footer-container {
+    padding: 50px 100px;
+    display: grid;
+    align-items: top;
+    grid-template-columns: 50% 50%;
+
+}
+
+.footer-contact {
+    justify-self: end;
+}
+
+.footer-contact h2 {
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.footer-contact ul li {
+    padding-bottom: 8px;
+}
+
+#footer-copyright {
+    font-size: .9rem;
+    font-weight: 300;
+}
+
+#footer-copyright strong {
+    color: #fff;
+    font-weight: 500;
+}
+
+.footer-meta-info {
+    padding: 2px 0;
     text-align: center;
-    letter-spacing: 2px;   
+    background-color: #022B3A;
 }
 
-footer a {
-    text-decoration: none;
-}
-
-footer p,
-footer p span {
+.footer-meta-info a p {
     color: #fff;
 }
 
-footer #footer-copyright .copy-tree{
-    letter-spacing: 0px;
-}
-
-footer #footer-updated,
-footer #footer-updated span {
-    font-size: .8rem;
-    font-style: italic;
-    color: #fff;
-}
 
 
 /* *****MAIN PAGE STYLING***** */

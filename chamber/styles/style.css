@@ -110,7 +110,7 @@ footer {
 .footer-container {
     padding: 50px 100px;
     display: grid;
-    align-items: top;
+    align-items: flex-start;
     grid-template-columns: 50% 50%;
 
 }

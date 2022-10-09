@@ -1,0 +1,145 @@
+/* *****MOBILE VIEWS STYLING***** */ 
+
+/* ---Tablet View--- */
+
+@media screen and (max-width: 850px) {
+
+    /* *****UNIVERSAL STYLING***** */
+    * {
+        font-size: 20px;
+    }
+
+    header, .footer-container {
+        padding: 20px;
+    }
+
+    .page-navigation {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        background-color: #BFDBF7;
+    }
+
+    .page-navigation ul {
+        padding: 0;
+    }
+
+    .page-navigation ul li {
+        padding: 15px 0;
+        border-bottom: solid 4px #abd0f4;
+    }
+
+    .page-navigation {
+        display: none;
+        z-index: 1000;
+    }
+
+    .page-navigation.active {
+        display: block;
+    }
+
+
+    .page-navigation ul {
+        display: block;
+        text-align: center;
+    }
+
+    .social-with-burger .hamburger-icon,
+    .page-navigation .close-icon {
+        display: block;
+        top: 30px;
+        background: rgba(255, 255, 255, 0.688);
+        color: #022B3A;
+        border: 3px #303030 solid;
+        border-radius: 8px;
+    }
+
+    .social-with-burger .hamburger-icon {
+        position: absolute;
+        right: 30px;
+        padding: 10px;
+    }
+    .page-navigation .close-icon {
+        position: fixed;
+        left: 30px;
+        padding: 2px 12px;
+    }
+
+    .social-with-burger .hamburger-icon span,
+    .page-navigation .close-icon span {
+        color: #303030;
+        font-size: 2rem;
+    }
+
+    .footer-logo-wrapper > img {
+        width: 300px;
+    }
+
+    .footer-contact h2 {
+        font-size: 1.2rem;
+    }
+
+    .footer-contact ul {
+        padding: 0;
+    }
+
+    .footer-contact ul li {
+        font-size: .6rem;
+        padding-bottom: 0px;
+        margin-top: -10px;
+    }
+
+    /* *****HOME PAGE STYLING***** */
+    .main-content-wrapper {
+        display: block;
+        margin: 30px 0;
+    }
+
+    .page-sections {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .hero-div {
+        margin-bottom: 10px;
+    }
+
+    .page-sections.spotlight,
+    .page-sections.left-sidebar {
+        display: grid;
+        column-gap: 10px;
+    }
+
+    .page-sections.spotlight {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows:  1fr;
+    }
+
+    .page-sections.spotlight > div:nth-child(3) {
+        display: none;
+    }
+
+    .page-sections.left-sidebar {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows:  2fr;
+    }
+
+    .page-sections.left-sidebar .event {
+        order: 2;
+        grid-column: 1/3;
+    }
+
+    .page-sections.left-sidebar .weather {
+        order: 3;
+    }
+
+    .page-sections.left-sidebar .join {
+        order: 1;
+        grid-column: 1/4;
+    }
+
+    
+
+}

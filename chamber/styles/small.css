@@ -1,0 +1,85 @@
+/* ---Phone View--- */
+
+@media screen and (max-width: 500px) {
+
+    /* *****UNIVERSAL STYLING***** */
+    header, .footer-container {
+        padding: 10px;
+    }
+
+    .page-logo-wrapper img{
+        width: 160%;
+        height: 160%;
+    }
+    
+    .page-header .social-with-burger {
+        margin-right: -15px;
+    }
+
+    .social-with-burger .hamburger-icon {
+        right: 10px;
+        padding: 5px;
+    }
+
+    .social-with-burger .hamburger-icon span {
+        font-size: 1.5rem;
+    }
+
+
+    /* *****HOME PAGE STYLING***** */
+    .main-content-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .page-sections.page-section-three.left-sidebar {
+        display: block;
+        order: 2;
+    }
+
+    .page-sections.page-section-two.spotlight {
+        display: block;
+        order: 3;
+        margin-bottom: 0px;
+    }
+
+    .join {
+        display: none;
+    }
+ 
+    .event {
+        margin-bottom: 10px;
+    }
+
+    .news-release {
+        display: none;
+    }
+
+    .hero-div{
+        margin-bottom: 0px;
+    }
+
+    .footer-container {
+        display: block;
+        text-align: center;
+    }
+
+    .footer-container h2{
+        display: none;
+    }
+
+    .footer-meta-info {
+        padding: 2px 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #footer-copyright {
+        font-size: .7rem;
+        font-weight: 300;
+    }
+        
+
+
+
+  }

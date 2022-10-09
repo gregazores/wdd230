@@ -91,6 +91,11 @@
         margin-top: -10px;
     }
 
+    .footer-meta-info {
+        padding: 2px 20px;
+
+    }
+
     /* *****HOME PAGE STYLING***** */
     .main-content-wrapper {
         display: block;

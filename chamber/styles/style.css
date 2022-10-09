@@ -37,7 +37,8 @@ body {
     line-height: 1.8rem;
 }
 
-ul li {
+ul li,
+ul li a {
     list-style: none;
     color: #fff
 }

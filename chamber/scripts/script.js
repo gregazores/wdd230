@@ -4,13 +4,9 @@ let d = new Date()
 let fulldateUK = new Intl.DateTimeFormat("en-UK", {
 	dateStyle: "full"
 }).format(d);
-document.querySelector(".current-date p").innerHTML = fulldate
+document.querySelector(".current-date p").innerHTML = fulldateUK
 
 //Resposive Menu Scripts
-let burgerMenu = document.querySelector("#burger-icon")
-let closerIcon = document.querySelector("#close-icon")
-burgerMenu.addEventListener("click", addActive)
-closerIcon.addEventListener("click", addActive)
 function addActive(){
     document.querySelector("#responsive-nav").classList.toggle("active")
 }

@@ -33,11 +33,12 @@
 
     .page-navigation {
         display: none;
-        z-index: 1000;
+        z-index: -1000;
     }
 
     .page-navigation.active {
         display: block;
+        z-index: 1000;
     }
 
 
@@ -59,7 +60,8 @@
     .social-with-burger .hamburger-icon {
         position: absolute;
         right: 30px;
-        padding: 10px;
+        padding: 0;
+        margin: 0;
     }
     .page-navigation .close-icon {
         position: fixed;
@@ -67,10 +69,13 @@
         padding: 2px 12px;
     }
 
-    .social-with-burger .hamburger-icon span,
-    .page-navigation .close-icon span {
+    .social-with-burger .hamburger-icon button,
+    .page-navigation .close-icon button {
         color: #303030;
         font-size: 2rem;
+        background-color: transparent;
+        border: 0px;
+        padding: 15px;
     }
 
     .footer-logo-wrapper > img {
@@ -81,11 +86,8 @@
         font-size: 1.2rem;
     }
 
-    .footer-contact ul {
-        padding: 0;
-    }
-
-    .footer-contact ul li {
+    .footer-contact ul li,
+    .footer-contact ul li a {
         font-size: .6rem;
         padding-bottom: 0px;
         margin-top: -10px;

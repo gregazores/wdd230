@@ -20,11 +20,11 @@
         <div class="page-wrapper">
             <header class="page-header">
                 <a class="page-logo-wrapper" href="index.html">
-                    <img src="images/chamber-of-commerce-logo.png" width="350" height="96" alt="Ozamiz City Chamber of Commerce Logo">
+                    <img src="images/chamber-of-commerce-logo-white.png" width="350" height="96" alt="Ozamiz City Chamber of Commerce Logo">
                 </a>
                 <nav class="page-navigation" id="responsive-nav">
                     <ul>
-                        <li class="close-icon" id="close-icon"><span>x</span></li>
+                        <li class="close-icon"><button type="button" onclick=addActive()>x</button></li>
                         <li><a href="#">Discover</a></li>
                         <li><a href="#">Directory</a></li>
                         <li><a href="#">Join</a></li>
@@ -35,7 +35,7 @@
                     <ul>
                         <li><a href="#" class="facebook"><img src="images/facebook.png" width="50" height="50" alt="Facebook Logo"></a></li>
                         <li><a href="#" class="linkedin"><img src="images/linkedin.png" width="50" height="50" alt="Facebook Logo"></a></li>
-                        <li class="hamburger-icon" id="burger-icon"><span>&#9776;</span></li>
+                        <li class="hamburger-icon"><button  onclick=addActive() type="button">&#9776;</button></li>
                     </ul>
                 </nav>
                 <div class="current-date">
@@ -49,7 +49,19 @@
                 <div class="main-content-wrapper">
                     <section class="page-sections page-section-one hero">
                         <div class="hero-div">
-                            <h3><em>Hero with site name and call to action.</em></h3>
+                            <ul class="bg-slideshow">
+                                <li>Img1</li>
+                                <li>Img2</li>
+                                <li>Img3</li>
+                                <li>Img4</li>
+                                <li>Img5</li>
+                                <li>Img6</li>
+                            </ul>
+                            <div class="absolute-overlay"></div>
+                            <div class="content-container">
+                                <h1>Welcome to Ozamiz City</h1>
+                                <button class="generic-button-blue">Join the Chamber</button>
+                            </div>
                         </div>
                         <div class="news-release">
                             <h3><em>News Release</em></h3>
@@ -77,7 +89,13 @@
                             <h3><em>Weather</em></h3>
                         </div>
                         <div class="sidebar join">
-                            <h3><em>Join</em></h3>
+                            <div class="absolute-overlay"></div>
+                            <div class="content-container">
+                                <p>Discover how to join the chamber of commerce and how it will benefit your organization!</p>
+                                <button class="generic-button-blue">Join Us!</button>
+                            </div>
+                            
+
                         </div>
                         <div class="news-release2">
                             <h3><em>News Release</em></h3>
@@ -94,7 +112,7 @@
             <footer class="page-footer home-footer">
                 <div class="footer-container">
                     <a class="footer-logo-wrapper" href="index.html">
-                        <img src="images/chamber-of-commerce-logo.png" width="350" height="96" alt="Ozamiz City Chamber of Commerce Logo">
+                        <img src="images/chamber-of-commerce-logo-white.png" width="350" height="96" alt="Ozamiz City Chamber of Commerce Logo">
                         <h2>
                             Purok 1 Sinuza,<br>
                             Ozamiz City Misamis Occidental 7200<br>

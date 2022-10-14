@@ -62,6 +62,11 @@
         display: none;
     }
 
+    .news-release2 {
+        margin-top: 10px;
+        display: block;
+    }
+
     .hero-div{
         margin-bottom: 0px;
     }

@@ -66,6 +66,7 @@ header {
     display: grid;
     align-items: center;
     grid-template-columns: 30% 50% 20%;
+    box-shadow: 5px 5px 10px #30303049
 }
 
 .page-logo-wrapper {
@@ -123,11 +124,17 @@ nav ul li a:hover {
 
 .generic-button-blue:hover {
     background-color: #bfdbf755;
-    scale: 1.05;
-    transform: translateY(-4px);
+    transform: scale(1.1) translateY(-4px);
 }
 
 /* Generic Misc Element Styling */
+.bar-divider {
+    width: 100%;
+    height: 2px;
+    background-color: #303030;
+    margin-top: 10px;
+}
+
 .absolute-overlay {
     position: absolute;
     height: 100%;
@@ -137,11 +144,21 @@ nav ul li a:hover {
     background-color: rgba(0, 0, 0, 0.35);
 }
 
+.common-header-three {
+    color: #303030;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
 .content-container {
     position: absolute;
     z-index: 500;
     height: 100%;
     width: 100%;
+}
+
+.page-sections .sidebar {
+    text-align: center;
 }
 
 /* Generic Footer Styling */
@@ -212,24 +229,11 @@ footer {
 
 /* *****HOME PAGE STYLING***** */
 
-.main-content-wrapper {
-    margin: 30px 150px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 10px;
-}
-
-.page-sections.spotlight {
-    grid-column: 4/5;
-}
-
-.page-sections.hero {
-    grid-column: 2/4;
-}
-
+/* Hero Styling */
 /* Animated Sliding BG */
 .page-sections.hero .hero-div{
     position: relative;
+    height: 100%;
 }
 .page-sections.hero .hero-div .bg-slideshow {
     position: absolute;
@@ -251,9 +255,9 @@ footer {
     color: transparent;
     background-size: cover;
     background-position: 50% 50%;
-    background-repeat: none;
+    background-repeat: no-repeat;
     opacity: 0;
-    z-index: 0;  
+    z-index: 100;  
 }
 
 .bg-slideshow li:nth-child(1) {  
@@ -315,78 +319,244 @@ footer {
 }
 
 /* Left Sidebar Styling */
-.page-sections.left-sidebar {
-    grid-column: 1/2;
-    grid-row: 1/3;
+
+.left-sidebar-weather,
+.left-sidebar-event {
+    padding: 30px;
 }
 
-.left-sidebar .join {
+.left-sidebar-event {
+    text-align: center;
+    position: relative;
+    padding: 0;
+}
+
+.left-sidebar-event .sidebar.event {
+    position: absolute;
+    top: 50%;
+    left: 0;;
+    transform: translateY(-50%);
+    padding: 30px;
+}
+
+.left-sidebar-event > .event > h3{
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    margin-top: 40px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+}
+
+.left-sidebar-event p {
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.7rem;
+}
+
+.left-sidebar-event p a {
+    color: #303030;
+}
+
+.left-sidebar-event p a:hover {
+    color: #1F7A8C;
+}
+
+.left-sidebar-weather .weather-info-one {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.left-sidebar-weather .weather-info-one img {
+    transition: transform .3s linear;
+}
+
+.left-sidebar-weather:hover .weather-info-one img {
+    transform: scale(1.15);
+}
+
+.left-sidebar-weather .weather-info-one p {
+    font-size: 3rem;
+    padding-left: 50px;
+    transition: transform .3s linear;
+}
+
+.left-sidebar-weather:hover .weather-info-one p {
+    transform: scale(1.05);
+}
+
+.left-sidebar-weather table {
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.left-sidebar-weather table td:first-child {
+    text-align: right;
+    padding-right: 50px;
+}
+
+.left-sidebar-join {
     position: relative;
     background-image: url(../images/join.jpg);
     background-size: cover;
     background-position: center center;
 }
 
-.left-sidebar .join .content-container {
+.left-sidebar-join .content-container {
     text-align: center;
     height: initial;
     top: 50%;
     transform: translateY(-50%);
 }
 
-.left-sidebar .join .content-container p {
+.left-sidebar-join .content-container p {
     margin-top: 0;
+    margin-bottom: 40px;
     padding: 0 30px;
     color: #fff;
-    font-weight: 200;
-    transition: all .5s linear;
-    opacity: 1;
+    font-weight: 300;
+    font-size: 1.4rem;
 }
 
-.left-sidebar .join:hover .content-container p {
-    opacity: 0;
+.left-sidebar-join:hover .content-container button {
+    transform: scale(1.1) translateY(-4px);
 }
 
-.left-sidebar .join:hover .content-container button {
-
+/* Right Sidebar Styling */
+.page-sections.spotlight-one,
+.page-sections.spotlight-two,
+.page-sections.spotlight-three{
+    padding: 0 30px;
 }
+
+.page-sections.spotlight-one .spot-one,
+.page-sections.spotlight-two .spot-two,
+.page-sections.spotlight-three .spot-three{
+    position: relative;
+    text-align: center;
+    height: 100%;
+    background-size: cover;
+}
+
+.page-sections.spotlight-one {
+    padding-top: 30px;
+}
+
+.spotlight-container {
+    padding: 30px;
+}
+
+.spotlight-container .content-container {
+    position: relative;
+}
+
+.spotlight-container .content-container .lower-part {
+    margin-top: 170px;
+}
+
+.spotlight-container .content-container .lower-part p {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.spotlight-container .content-container .lower-part p:last-child {
+    margin-top: 0px;
+}
+
+.spotlight-container .content-container h3,
+.spotlight-container .content-container p,
+.spotlight-container .content-container em {
+    color: #fff;
+}
+
+.spotlight-container .content-container .bar-divider {
+    background-color: #fff;
+}
+
+.spotlight-container .content-container .lower-part {
+    grid-row: 2/3;
+}
+
+.page-sections.spotlight-one .spot-one {
+    background-image: url(../images/truck2.jpg);
+    background-position: 50% 65%;
+}
+
+.page-sections.spotlight-two .spot-two {
+    background-image: url(../images/coding1.jpg);
+    background-position: 30% 50%;
+}
+
+.page-sections.spotlight-three .spot-three {
+    background-image: url(../images/treehouse1.jpg);
+    background-position: 30% 30%;
+}
+
+
+
+
+
+/* ---Desktop View Layout--- */
 
 .page-sections {
+    background-color: #E1E5F2;
+    box-shadow: 5px 5px 10px #30303049
+}
+
+.main-content-wrapper {
+    margin: 30px 150px;
     display: grid;
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    row-gap: 10px;
+    column-gap: 20px;
 }
 
-.page-sections > div {
-
-    background-color: #E1E5F2;
-}
-
-.page-sections > div {
-    min-height: 200px;
-}
-
-.page-sections.page-section-two.spotlight {
-    row-gap: 0;
-    padding: 20px;
-    background-color: #E1E5F2;
-}
-
-.page-sections.page-section-two.spotlight > div {
-    border: 1px #9d9fa6 solid;
-}
-
-.hero-div{
+.page-sections.hero {
+    grid-column: 2/4;
     grid-row: 1/3;
+    margin-bottom: 20px;
 }
 
-.news-release {
+.page-sections.news-release {
+    grid-column: 2/4;
     grid-row: 3/4;
 }
 
-.news-release2 {
-    display: none;
+.page-sections.spotlight-one {
+    grid-column: 4/5;
+    grid-row: 1/2;
 }
+
+.page-sections.spotlight-two {
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+
+.page-sections.spotlight-three {
+    grid-column: 4/5;
+    grid-row: 3/4;
+}
+
+.page-sections.left-sidebar-event {
+    background-color: #BFDBF7;
+    grid-column: 1/2;
+    grid-row: 1/2; 
+}
+
+.page-sections.left-sidebar-weather {
+    margin: 20px 0;
+    grid-column: 1/2;
+    grid-row: 2/3; 
+}
+
+.page-sections.left-sidebar-join {
+    grid-column: 1/2;
+    grid-row: 3/4; 
+}
+
+
+
+
 
 
 

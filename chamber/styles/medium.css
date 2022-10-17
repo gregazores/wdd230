@@ -6,9 +6,10 @@
 
     /* *****UNIVERSAL STYLING***** */
     * {
-        font-size: 20px;
+        font-size: 26px;
     }
 
+    /* Generic Nav and Header Styling */
     header, .footer-container {
         padding: 20px;
     }
@@ -78,19 +79,45 @@
         padding: 15px;
     }
 
+    /* Generic Misc Element Styling */
+    .page-sections.common-card .common-text-card p {
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 1.7rem;
+    }
+
+    .common-header-three {
+        font-size: 1.6rem;
+    }
+
+    /* Generic Footer Styling */
+    footer {
+        padding-top: 30px;
+    }
+
     .footer-logo-wrapper > img {
         width: 300px;
     }
 
-    .footer-contact h2 {
-        font-size: 1.2rem;
+    footer .footer-logo-wrapper,
+    footer .footer-contact {
+        width: 90%;
     }
 
+    .footer-contact {
+        display: block;
+    }
+
+    .footer-contact h2 {
+        font-size: 1.5rem;
+    }
+
+    footer .footer-logo-wrapper h2,
     .footer-contact ul li,
     .footer-contact ul li a {
-        font-size: .6rem;
-        padding-bottom: 0px;
-        margin-top: -10px;
+        word-wrap: break-word;
+        font-size: 1rem;
+        line-height: 1.4rem;
     }
 
     .footer-meta-info {
@@ -112,6 +139,24 @@
         margin-bottom: 20px;
     }
 
+    .page-sections.news-release {
+        height: 650px;
+    }
+
+    .page-sections.news-release p {
+        margin-bottom: 0;
+    }
+
+    .page-sections.hero .hero-div .inner-content-container {
+        padding: 50px 40px;
+    }
+
+    .hero-div .content-container h1 {
+        font-size: 3rem;
+        line-height: 3.5rem;
+        margin-bottom: 20px;
+    }
+
     .page-sections.spotlight-two,
     .page-sections.spotlight-one {
         width: 46%;
@@ -127,6 +172,10 @@
         margin-right: -20px;
         padding-right: 10px;
         padding-left: 20px;
+    }
+
+    .spotlight-container {
+        box-shadow: 5px 5px 10px #30303000;
     }
 
     .spotlight-container .content-container .lower-part {
@@ -147,102 +196,35 @@
         margin-top: 0;
     }
 
+    .left-sidebar-weather {
+        height: 600px;
+    }
+
+    .left-sidebar-weather h3 {
+        margin-bottom: 30px;
+    }
+
+    .left-sidebar-weather .weather-info-one img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .left-sidebar-weather .weather .weather-info-one p {
+        font-size: 3rem;
+    }
+
+    .left-sidebar-event p a {
+        font-size: 1.2rem;
+    }
+
     .page-sections.left-sidebar-join {
         order: 7;
     }
 
     .left-sidebar-join .content-container p {
-        margin-bottom: 70px;
-        padding: 0 50px;
+        font-weight: 300;
     }
 
 }
 
 
-/*
-    .main-content-wrapper {
-        display: flex;
-        flex-direction: column;
-        margin: 30px 0;
-    }
-
-    .page-sections {
-        height: 400px; 
-    }
-
-    .page-sections.spotlight-two,
-    .page-sections.spotlight-one {
-        width: 50%;
-        display: inline !important;
-    }
-
-    .page-sections.spotlight-one {
-        float: left !important;
-    }
-
-    .page-sections.spotlight-three {
-        display: none;
-    }
-
-    .page-sections.left-sidebar-event,
-    .page-sections.left-sidebar-weather {
-        order: 8;
-    }
-
-    .page-sections.left-sidebar-join {
-        order: 7;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-.main-content-wrapper {
-        display: grid;
-        grid-template-rows: repeat(3, 1fr);
-        margin: 30px 0;
-    }
-
-    .page-sections.hero,
-    .page-sections.news-release,
-    .page-sections.spotlight-one,
-    .page-sections.spotlight-two,
-    .page-sections.left-sidebar-event,
-    .page-sections.left-sidebar-join {
-        height: 400px;
-
-        margin-bottom: 10px;
-    }
-
-    .page-sections.spotlight-one {
-        float: left;
-        margin-right: -1px;
-    }
-
-    .page-sections.spotlight-one,
-    .page-sections.spotlight-two {
-        display: inline-block;
-        width: 50%;  
-    }
-
-    .page-sections.spotlight-three {
-        display: none;
-        order: 8 !important;
-    }
-
-    .page-sections.left-sidebar-join {
-        order: 5 !important;
-    }
-
-
-    
-
-
-    */

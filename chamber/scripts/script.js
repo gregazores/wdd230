@@ -12,12 +12,16 @@ function addActive(){
 }
 
 let theDay = d.getDay()
+window.addEventListener('load', (event) => {
+    if ( theDay == 1 || theDay == 2) {
+        document.querySelector(".wednesday-prompt.marquee-w").style.display = "block"
+        console.log("Mon or tue")
+    } else {
+        document.querySelector(".wednesday-prompt.marquee-w").style.display = "none"
+    }
+});
 
-if ( theDay == 1 || theDay == 2) {
-    document.querySelector(".wednesday-prompt.marquee-w").style.display = "none"
-} else {
-    document.querySelector(".wednesday-prompt.marquee-w").style.display = "block"
-}
+
 
 
 //Footer Meta scripts

@@ -58,7 +58,16 @@
         margin: 30px auto;
     }
     .page-sections.news-release {
+        height: 700px;
         order: 4;
+    }
+
+    .page-sections.news-release > .card-news-release > p {
+        font-size: 1rem;
+    }
+
+    .spotlight-container {
+        box-shadow: 5px 5px 10px #30303000;
     }
 
     .page-sections.spotlight-one,
@@ -73,11 +82,7 @@
     }
 
     .spotlight-container .content-container .lower-part {
-        margin-top: 170px;
-    }
-
-    .spotlight-container .content-container .lower-part p {
-        word-wrap: break-word;
+        margin-top: 200px;
     }
 
     .page-sections.left-sidebar-event {

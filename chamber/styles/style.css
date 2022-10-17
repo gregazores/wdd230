@@ -235,6 +235,29 @@ footer {
     position: relative;
     height: 100%;
 }
+
+.page-sections.hero .hero-div > .content-container {
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: fit-content;
+    text-align: center;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.531);
+
+}
+
+.hero-div .content-container h1 {
+    font-size: 5rem;
+    line-height: 5rem;
+    margin-bottom: 90px;
+    text-transform: uppercase;
+}
+
+.hero-div .content-container button {
+
+}
+
 .page-sections.hero .hero-div .bg-slideshow {
     position: absolute;
     margin: 0;
@@ -299,56 +322,32 @@ footer {
     100% { opacity: 0 }
 }
 
-.hero-div .content-container h1 {
-    font-family: 'Open Sans', Helvetica, sans-serif;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    font-size: 2rem;
-    padding: 20px 15px;
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.284);
-    text-transform: uppercase;
-}
-
-.hero-div .content-container button {
-    position: absolute;
-    right: 15px;
-    bottom: 15px;
-}
-
 /* Left Sidebar Styling */
 
-.left-sidebar-weather,
-.left-sidebar-event {
-    padding: 30px;
-}
-
-.left-sidebar-event {
+.page-sections.common-card {
     text-align: center;
     position: relative;
-    padding: 0;
 }
 
-.left-sidebar-event .sidebar.event {
+.page-sections.common-card .common-text-card {
     position: absolute;
     top: 50%;
-    left: 0;;
+    left: 0;
+    right: 0;
     transform: translateY(-50%);
     padding: 30px;
 }
 
-.left-sidebar-event > .event > h3{
+.page-sections.common-card > .event > h3{
     font-family: 'Open Sans', Helvetica, sans-serif;
     margin-top: 40px;
     text-transform: uppercase;
     letter-spacing: .2rem;
 }
 
-.left-sidebar-event p {
+.page-sections.common-card .common-text-card p {
     font-size: 1.4rem;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.7rem;
 }
 
@@ -375,7 +374,7 @@ footer {
     transform: scale(1.15);
 }
 
-.left-sidebar-weather .weather-info-one p {
+.left-sidebar-weather .weather .weather-info-one p {
     font-size: 3rem;
     padding-left: 50px;
     transition: transform .3s linear;
@@ -396,14 +395,12 @@ footer {
 }
 
 .left-sidebar-join {
-    position: relative;
     background-image: url(../images/join.jpg);
     background-size: cover;
     background-position: center center;
 }
 
 .left-sidebar-join .content-container {
-    text-align: center;
     height: initial;
     top: 50%;
     transform: translateY(-50%);
@@ -411,7 +408,7 @@ footer {
 
 .left-sidebar-join .content-container p {
     margin-top: 0;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     padding: 0 30px;
     color: #fff;
     font-weight: 300;
@@ -427,6 +424,7 @@ footer {
 .page-sections.spotlight-two,
 .page-sections.spotlight-three{
     padding: 0 30px;
+    background-color: #BFDBF7;
 }
 
 .page-sections.spotlight-one .spot-one,
@@ -442,12 +440,18 @@ footer {
     padding-top: 30px;
 }
 
+.page-sections.spotlight-three {
+    padding-bottom: 30px;
+}
+
 .spotlight-container {
     padding: 30px;
+    box-shadow: 5px 5px 10px #3030306f;
 }
 
 .spotlight-container .content-container {
     position: relative;
+    
 }
 
 .spotlight-container .content-container .lower-part {

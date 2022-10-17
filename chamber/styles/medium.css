@@ -114,20 +114,31 @@
 
     .page-sections.spotlight-two,
     .page-sections.spotlight-one {
-        width: 47%;
-        padding: 10px;
+        width: 46%;
+        padding: 20px 0;
+    }
+
+    .page-sections.spotlight-two {
+        padding-right: 20px;
+        padding-left: 10px;
     }
 
     .page-sections.spotlight-one {
         margin-right: -20px;
+        padding-right: 10px;
+        padding-left: 20px;
+    }
+
+    .spotlight-container .content-container .lower-part {
+        margin-top: 170px;
+    }
+
+    .spotlight-container .content-container .lower-part p {
+        word-wrap: break-word;
     }
 
     .page-sections.spotlight-three {
         display: none;
-    }
-
-    .spotlight-container .content-container .lower-part {
-        margin-top: 100px;
     }
 
     .page-sections.left-sidebar-event,
@@ -138,6 +149,11 @@
 
     .page-sections.left-sidebar-join {
         order: 7;
+    }
+
+    .left-sidebar-join .content-container p {
+        margin-bottom: 70px;
+        padding: 0 50px;
     }
 
 }

@@ -87,11 +87,11 @@ a {
     white-space: nowrap;
     min-width: 100%;
     height: 100%;
-    animation: marquee 10s linear infinite;
+    animation: marquee 20s linear infinite;
 }
 
 .marquee2 span {
-    animation-delay: 5s;
+    animation-delay: 10s;
 }
 @keyframes marquee {
     0% {

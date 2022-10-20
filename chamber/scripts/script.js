@@ -11,6 +11,14 @@ function addActive(){
     document.querySelector("#responsive-nav").classList.toggle("active")
 }
 
+let theDay = d.getDay()
+
+if ( theDay == 1 || theDay == 2) {
+    document.querySelector(".wednesday-prompt.marquee-w").style.display = "none"
+} else {
+    document.querySelector(".wednesday-prompt.marquee-w").style.display = "block"
+}
+
 
 //Footer Meta scripts
 //Will change content depending on the size of the window

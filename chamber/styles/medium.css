@@ -10,6 +10,10 @@
     }
 
     /* Generic Nav and Header Styling */
+    .marquee2 span {
+        animation-delay: 10s;
+    }
+
     header, .footer-container {
         padding: 20px;
     }

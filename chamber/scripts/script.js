@@ -18,6 +18,7 @@ window.addEventListener('load', (event) => {
         console.log("Mon or tue")
     } else {
         document.querySelector(".wednesday-prompt.marquee-w").style.display = "none"
+        console.log("other days")
     }
 });
 

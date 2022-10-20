@@ -10,6 +10,10 @@
     }
 
     /* Generic Nav and Header Styling */
+    .marquee span {
+        animation: marquee 10s linear infinite;
+    }
+
     .marquee2 span {
         animation-delay: 10s;
     }

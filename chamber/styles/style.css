@@ -335,6 +335,11 @@ footer .footer-contact {
     background-color: rgba(0, 0, 0, 0.701);
 }
 
+.page-sections.hero .hero-div .inner-content-container:hover .generic-button-blue {
+    background-color: #bfdbf755;
+    transform: scale(1.1) translateY(-4px);
+}
+
 .hero-div .content-container h1 {
     font-size: 5rem;
     line-height: 5rem;

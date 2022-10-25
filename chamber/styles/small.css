@@ -116,8 +116,16 @@
         margin-top: 200px;
     }
 
+    .left-sidebar-event {
+        width: 100%;
+    }
+
     .page-sections.left-sidebar-event {
         order: 2;
+    }
+
+    .left-sidebar-weather {
+        width: 100%;
     }
 
     .page-sections.left-sidebar-weather {
@@ -136,6 +144,12 @@
 
     .left-sidebar-weather .weather table td {
         font-size: .9rem;
+    }
+
+    .left-sidebar-event .common-text-card.event p,
+    .left-sidebar-event p a {
+        font-size: 1rem;
+        line-height: 1.7rem;
     }
 
     .page-sections.left-sidebar-join  {

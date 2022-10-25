@@ -205,6 +205,7 @@
     }
 
     .left-sidebar-weather {
+        width: 37%;
         height: 600px;
     }
 
@@ -213,16 +214,34 @@
     }
 
     .left-sidebar-weather .weather-info-one img {
-        width: 250px;
-        height: 250px;
+        width: 110px;
+        height: 110px;
     }
 
     .left-sidebar-weather .weather .weather-info-one p {
-        font-size: 3rem;
+        font-size: 1.2rem;
+        padding-left: 10px
     }
 
+    .left-sidebar-weather table td:first-child {
+        padding-right: 10px;
+    }
+
+    .left-sidebar-weather .weather-contailer table tbody tr td {
+        font-size: 1rem;
+        text-align: left;
+        line-height: 1.3rem;
+        padding-bottom: 10px;
+    }
+
+    .left-sidebar-event {
+        width: 60%
+    }
+
+    .left-sidebar-event .common-text-card.event p,
     .left-sidebar-event p a {
-        font-size: 1.2rem;
+        font-size: 1rem;
+        line-height: 1.3rem;
     }
 
     .page-sections.left-sidebar-join {

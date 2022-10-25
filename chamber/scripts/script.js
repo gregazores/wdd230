@@ -25,6 +25,8 @@ window.addEventListener('load', (event) => {
 
 
 
+
+
 //Footer Meta scripts
 //Will change content depending on the size of the window
 let last_mod = document.lastModified

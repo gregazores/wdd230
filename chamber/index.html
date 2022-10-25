@@ -28,7 +28,7 @@
             </div>
             <header class="page-header">
                 <a class="page-logo-wrapper" href="index.html">
-                    <img src="images/chamber-of-commerce-logo-white.png" width="350" height="96" alt="Ozamiz City Chamber of Commerce Logo">
+                    <img src="images/chamber-of-commerce-logo-white.webp" width="350" height="96" alt="Ozamiz City Chamber of Commerce Logo">
                 </a>
                 <nav class="page-navigation" id="responsive-nav">
                     <ul>
@@ -154,7 +154,7 @@
                                 <h3 class="common-header-three">Weather</h3>
                                 <div class="weather-info-one">
                                     <img src="images/sunny.png" alt="weather-icon" width="120" height="120">
-                                    <p>33&#8451</p>
+                                    <p id="temperature">33&#8451</p>
                                 </div>
                                 <h3 class="common-header-three">Partly Cloudy</h3>
                                 <div class="bar-divider"></div>
@@ -163,7 +163,7 @@
                                         <td>
                                             Wind Speed:
                                         </td>
-                                        <td>
+                                        <td id="wind-speed">
                                             2.5km/hr
                                         </td>
                                     </tr>
@@ -171,7 +171,7 @@
                                         <td>
                                             Wind Chill:
                                         </td>
-                                        <td>
+                                        <td id="wind-chill">
                                             N/A
                                         </td>
                                     </tr>
@@ -203,7 +203,7 @@
             <footer class="page-footer home-footer">
                 <div class="footer-container">
                     <a class="footer-logo-wrapper" href="index.html">
-                        <img src="images/chamber-of-commerce-logo-white.png" width="350" height="96" alt="Ozamiz City Chamber of Commerce Logo">
+                        <img src="images/chamber-of-commerce-logo-white.webp" width="350" height="96" alt="Ozamiz City Chamber of Commerce Logo">
                         <h2>
                             Purok 1 Sinuza,<br>
                             Ozamiz City Misamis Occidental 7200<br>
@@ -227,5 +227,6 @@
 
         </div>
         <script src="scripts/script.js" async defer></script>
+        <script src="scripts/windchill.js" async defer></script>
     </body>
 </html>

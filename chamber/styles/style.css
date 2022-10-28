@@ -188,7 +188,7 @@ nav ul li a:hover {
     width: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.35);
+    background-color: rgba(0, 0, 0, 0.50);
 }
 
 .common-header-three {
@@ -513,7 +513,6 @@ footer .footer-contact {
 .page-sections.spotlight-two,
 .page-sections.spotlight-three{
     padding: 0 30px;
-    background-color: #BFDBF7;
 }
 
 .page-sections.spotlight-one .spot-one,
@@ -597,6 +596,11 @@ footer .footer-contact {
     box-shadow: 5px 5px 10px #30303049
 }
 
+.page-sections.left-sidebar-event,
+.page-sections.page-sections.news-release {
+    background-color: #BFDBF7;
+}
+
 .main-content-wrapper {
     margin: 30px 150px;
     display: grid;
@@ -632,7 +636,6 @@ footer .footer-contact {
 }
 
 .page-sections.left-sidebar-event {
-    background-color: #BFDBF7;
     grid-column: 1/2;
     grid-row: 1/2; 
 }

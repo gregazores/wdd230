@@ -524,6 +524,10 @@ footer .footer-contact {
     background-size: cover;
 }
 
+.spotlight-container .absolute-overlay {
+    background-color: rgba(0, 0, 0, 0.70);
+}
+
 .page-sections.spotlight-one {
     padding-top: 30px;
 }
@@ -559,7 +563,7 @@ footer .footer-contact {
 .spotlight-container .content-container p,
 .spotlight-container .content-container em {
     color: #fff;
-    text-shadow: 0px 1px 27px rgba(0,0,0,1);
+    text-shadow: 0px 1px 15px rgba(0,0,0,1);
 }
 
 .spotlight-container .content-container .bar-divider {

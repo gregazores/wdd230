@@ -412,6 +412,21 @@ footer .footer-contact {
     100% { opacity: 0 }
 }
 
+.responsive-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+}
+
+.responsive-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 /* Left Sidebar Styling */
 
 .left-sidebar-event p a {

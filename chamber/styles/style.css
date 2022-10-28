@@ -560,6 +560,7 @@ footer .footer-contact {
 .spotlight-container .content-container p,
 .spotlight-container .content-container em {
     color: #fff;
+    text-shadow: 0px 1px 27px rgba(0,0,0,1);
 }
 
 .spotlight-container .content-container .bar-divider {

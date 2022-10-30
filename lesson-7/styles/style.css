@@ -65,7 +65,7 @@ header {
     text-align: center;
     background-color: #1F7A8C;
     padding: 20px 100px;
-    box-shadow: 5px 5px 10px #30303049
+    box-shadow: 5px 5px 10px #30303092
 }
 
 header h1 {
@@ -85,13 +85,12 @@ header h1 {
 }
 
 .image-container img {
-    box-shadow: 5px 5px 10px #30303049;
-    opacity: .3;
-    transition: all .5s linear;
+    opacity: .2;
+    transition: all .8s linear;
 }
 
 .image-container .animated {
-    box-shadow: 5px 5px 10px #303030;
+    box-shadow: 5px 5px 10px #30303092;
     opacity: 1;
 }
 

@@ -44,6 +44,17 @@ body {
     line-height: 1.8rem;
 }
 
+ul li,
+ul li a {
+    list-style: none;
+    color: #fff
+}
+
+a {
+    text-decoration: none;
+}
+
+
 .page-wrapper {
     width: 100%;
     margin: auto;
@@ -74,7 +85,14 @@ header h1 {
 }
 
 .image-container img {
-    box-shadow: 5px 5px 10px #30303049
+    box-shadow: 5px 5px 10px #30303049;
+    opacity: .3;
+    transition: all .5s linear;
+}
+
+.image-container .animated {
+    box-shadow: 5px 5px 10px #303030;
+    opacity: 1;
 }
 
 
@@ -163,5 +181,4 @@ footer .footer-contact {
 
 
 
-/* *****HOME PAGE STYLING***** */
-
+/* ***** PAGE STYLING***** */

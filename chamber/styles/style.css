@@ -672,6 +672,119 @@ footer .footer-contact {
     grid-row: 3/4; 
 }
 
+/* *****DISCOVER PAGE STYLING***** */
+.discover-page .main-content-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.discover-page .page-sections {
+    background-color: #fff;
+}
+
+.discover-page .main-content-wrapper .hero {
+    height: 50vh;
+}
+
+.discover-page .main-content-wrapper .page-sections.page-section-one.hero .inner-content-container {
+    padding: 50px;
+}
+
+.discover-page .main-content-wrapper .page-sections.page-section-one.hero .inner-content-container h1 {
+    margin-bottom: 0;
+}
+
+.discover-page .page-section-two {
+    margin-top: 60px;
+    box-shadow: none;
+}
+
+.discover-divider {
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.demographic-column {
+    padding-right: 40px;
+}
+
+.feature-column {
+    padding-left: 40px;
+    border-left: solid 2px #30303094;
+}
+
+.feature-wrapper {
+    margin-top: 80px;
+}
+
+.feature-wrapper:first-child {
+    margin-top: 0;
+}
+
+.feature-column img {
+    width: 100%;
+}
+
+.demographic-column h2 {
+    color: #303030;
+    font-weight: 700;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+}
+
+.bottom-content h3 {
+    margin-top: 20px;
+    color: #303030;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.bottom-content p,
+.demographic-column p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.9rem;
+}
+
+
+/*
+.discover-page .page-sections {
+    margin-top: 70px;
+    background-color: #fff;
+    box-shadow: none;
+}
+
+.discover-page .page-sections:first-child {
+    margin-top: 30px;
+}
+
+.discover-page .page-sections .common-text-card.card-news-release {
+    width: 100%;
+
+}
+
+.discover-page .page-sections picture img {
+    width: 100%;
+    box-shadow: 5px 5px 10px #30303049;
+}
+
+.discover-page .main-content-wrapper .page-sections.common-card .common-text-card {
+    position: revert;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: revert;
+    padding: 30px;
+}
+
+
+.discover-page .bar-divider {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+*/
 
 
 

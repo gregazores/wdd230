@@ -256,6 +256,30 @@
         font-weight: 300;
     }
 
+     /* *****DISCOVER PAGE LAYOUT***** */
+
+     .discover-page .main-content-wrapper .hero {
+        height: 10vh;
+    }
+
+     .discover-divider {
+         display: flex;
+         flex-direction: column;
+         margin-left: 50px;
+         margin-right: 50px;
+         text-align: center;
+     }
+
+     .demographic-column {
+        padding-right: 0px;
+    }
+
+    .feature-column {
+        margin-top: 100px;
+        padding-left: 0px;
+        border-left: 0px;
+    }
+
 }
 
 

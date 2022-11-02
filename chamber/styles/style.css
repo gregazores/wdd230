@@ -614,7 +614,7 @@ footer .footer-contact {
 
 .page-sections {
     background-color: #E1E5F2;
-    box-shadow: 5px 5px 10px #30303049
+    box-shadow: 5px 5px 10px #30303092;
 }
 
 .page-sections.left-sidebar-event,
@@ -708,6 +708,13 @@ footer .footer-contact {
     padding-right: 40px;
 }
 
+.demographic-column h2 {
+    color: #303030;
+    font-weight: 700;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+}
+
 .feature-column {
     padding-left: 40px;
     border-left: solid 2px #30303094;
@@ -723,13 +730,13 @@ footer .footer-contact {
 
 .feature-column img {
     width: 100%;
+    opacity: .2;
+    transition: all .8s linear;
 }
 
-.demographic-column h2 {
-    color: #303030;
-    font-weight: 700;
-    font-size: 2.2rem;
-    margin-bottom: 30px;
+.feature-column .animated {
+    box-shadow: 5px 5px 10px #30303092;
+    opacity: 1;
 }
 
 .bottom-content h3 {
@@ -745,6 +752,8 @@ footer .footer-contact {
     font-weight: 400;
     line-height: 1.9rem;
 }
+
+
 
 
 /*

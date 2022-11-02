@@ -156,9 +156,7 @@
         display: none;
     }
 
-  }
-
-  /* *****DISCOVER PAGE STYLING***** */
+    /* *****DISCOVER PAGE STYLING***** */
 .discover-page .hero-div .content-container h1,
 .demographic-column h2 {
     line-height: 2.5rem;
@@ -188,3 +186,7 @@
     font-weight: 400;
     line-height: 1.7rem;
 }
+
+  }
+
+  

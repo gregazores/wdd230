@@ -731,12 +731,17 @@ footer .footer-contact {
 .feature-column img {
     width: 100%;
     opacity: .2;
-    transition: all .8s linear;
+    transition: opacity .8s linear, transform .2s linear;
 }
 
 .feature-column .animated {
     box-shadow: 5px 5px 10px #30303092;
-    opacity: 1;
+    opacity: .7;
+}
+
+.feature-column img:hover {
+    transform: scale(1.02);
+    opacity: 100%;
 }
 
 .bottom-content h3 {

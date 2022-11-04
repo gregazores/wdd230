@@ -56,6 +56,19 @@ images.forEach(image => {
     imgObserver.observe(image)
 })
 
+//Last Visit Script
+
+if (localStorage.hasOwnProperty("firstVisit") == false) {
+    localStorage.setItem("firstVisit", fulldateUK);
+}
+localStorage.setItem("current-visit", fulldateUK);
+
+if (localStorage.getItem("firstVisit") == localStorage.getItem("current-visit")) {
+    alert('Welcome! This is your first visit')
+} else {
+    alert('Welcome Back! Good to see you again.')
+}
+
 
 
 

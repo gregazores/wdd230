@@ -2,7 +2,8 @@
 let d = new Date()
 //format the date into a UK format date
 let fulldateUK = new Intl.DateTimeFormat("en-UK", {
-	dateStyle: "full"
+	dateStyle: "full",
+    timeStyle: 'short'
 }).format(d);
 document.querySelector(".current-date p").innerHTML = fulldateUK
 
@@ -56,17 +57,27 @@ images.forEach(image => {
     imgObserver.observe(image)
 })
 
-//Last Visit Script
+//localStorage.clear()
 
 if (localStorage.hasOwnProperty("firstVisit") == false) {
-    localStorage.setItem("firstVisit", fulldateUK);
+    localStorage.setItem("firstVisit", d.getTime());
 }
-localStorage.setItem("current-visit", fulldateUK);
+localStorage.setItem("current-visit", d.getTime());
 
-if (localStorage.getItem("firstVisit") == localStorage.getItem("current-visit")) {
+let difference = parseInt(localStorage.getItem("current-visit")) - parseInt(localStorage.getItem("firstVisit"))
+
+if (difference < 30000) {
     alert('Welcome! This is your first visit')
 } else {
-    alert('Welcome Back! Good to see you again.')
+
+if (43200000 < difference &&  difference < 86400000) {
+    alert('Wow! Another visit for the same day? Welcome again.')
+}
+
+if (86400000 < difference) {
+    days = Math.round(difference/86400000)
+    alert(`It's been ${days} days since your last visit. Welcome Back`)
+}
 }
 
 

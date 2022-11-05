@@ -19,14 +19,14 @@ https://www.youtube.com/watch?v=D9RJ9_jZc2Q
 */
 
 :root {
-	--back: hsla(150, 50%, 30%, 1);
-  --back2: hsla(150, 50%, 30%, .5);
-  --foredark: hsla(0,0%,10%,1);
+	--back: #1F7A8C;
+  --back2: #BFDBF7;
+  --foredark: #0000;
 	--forelight: hsla(0,0%,100%,1);
-	--border: hsl(0,0%,20%);
-	--borderlight: hsl(0,0%,33%);
-	--shadow: hsl(0,0%,50%);
-	--zebra: hsl(0, 0%, 93%, 1);
+	--border: #303030;
+	--borderlight: #303030;
+	--shadow: #30303092;
+	--zebra: #E1E5F2;
 }
 
 /* *****UNIVERSAL STYLING***** */

@@ -789,7 +789,7 @@ footer .footer-contact {
 }
 
 .personal-info label input:required {
-    border: solid 2px rgba(255, 0, 0, 0.258);
+    border: solid 2px #EF233C;
 }
 
 .personal-info .req span {

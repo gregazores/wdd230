@@ -767,14 +767,6 @@ footer .footer-contact {
 }
 
 /* *****JOIN PAGE STYLING***** */
-/*
-.join-page .discover-divider {
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
-
-*/
-
 .join-page .demographic-column {
     margin-right: 30px;
 }
@@ -794,6 +786,10 @@ footer .footer-contact {
 .personal-info label {
     margin-top: 20px;
     display: block;
+}
+
+.personal-info label input:required {
+    border: solid 2px rgba(255, 0, 0, 0.258);
 }
 
 .personal-info .req span {

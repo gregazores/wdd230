@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="This is the website for Ozamiz City Chamber of Commerce. Project for WDD230">
+        <title>Ozamiz City Chamber | Thank You</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/large.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/small.css">
+    </head>
+    <body>
+        <div class="page-wrapper">
+            <div class="wednesday-prompt marquee-w">
+                <div class="marquee">
+                    <span>Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</span>
+                </div>
+                <div class="marquee marquee2">
+                    <span>Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</span>
+                </div>
+            </div>
+            <header class="page-header">
+                <a class="page-logo-wrapper" href="index.html">
+                    <img src="images/chamber-of-commerce-logo-white.webp" width="350" height="96" alt="Ozamiz City Chamber of Commerce Logo">
+                </a>
+                <nav class="page-navigation" id="responsive-nav">
+                    <ul>
+                        <li class="close-icon"><button type="button" onclick=addActive()>x</button></li>
+                        <li><a href="discover.html">Discover</a></li>
+                        <li><a href="#">Directory</a></li>
+                        <li><a href="join.html">Join</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <nav class="social-with-burger">
+                    <ul>
+                        <li><a href="#" class="facebook"><img src="images/facebook.png" width="50" height="50" alt="Facebook Logo"></a></li>
+                        <li><a href="#" class="linkedin"><img src="images/linkedin.png" width="50" height="50" alt="Facebook Logo"></a></li>
+                        <li class="hamburger-icon"><button  onclick=addActive() type="button">&#9776;</button></li>
+                    </ul>
+                </nav>
+                <div class="current-date">
+                    <p></p>
+                </div>
+            </header>
+            
+            <main class="discover-page main-content">
+                <div class="main-content-wrapper">
+
+                    <section class="page-sections page-section-one hero">
+                        <div class="hero-div">
+
+                            <picture class="responsive-image">
+                                <source media="(max-width:500px)" srcset="images/wdd230-org-small.jpg">
+                                <source media="(max-width:850px)" srcset="images/wdd230-org-medium.jpg">
+                                <img src="images/wdd230-org.jpg" alt="hero image  office setting">
+                            </picture>
+
+                            <div class="absolute-overlay"></div>
+                            <div class="content-container">
+                                <div class="inner-content-container">
+                                    <h1>THANK YOU FOR JOINING<br>Ozamiz City Chamber</h1>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+                       
+                </div>
+            </main>
+
+            <footer class="page-footer home-footer">
+                <div class="footer-container">
+                    <a class="footer-logo-wrapper" href="index.html">
+                        <img src="images/chamber-of-commerce-logo-white.webp" width="350" height="96" alt="Ozamiz City Chamber of Commerce Logo">
+                        <h2>
+                            Purok 1 Sinuza,<br>
+                            Ozamiz City Misamis Occidental 7200<br>
+                            Philippines
+                        </h2>
+                    </a>
+                    <div class="footer-contact">
+                        <h2>Contact Information</h2>
+                        <ul>
+                            <li>&#128231; info@ozamizchambercommerce.com</li>
+                            <li>&#128222; +63 965 7748476</li>
+                            <li><a href="https://www.google.com/maps/place/Ozamiz+City,+Misamis+Occidental/@8.1455132,123.6180458,11z/data=!3m1!4b1!4m5!3m4!1s0x3255ac621ea87229:0x29a34c1911c5bf46!8m2!3d8.162411!4d123.7741195" target="blank">📍 Location Map</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-meta-info">
+                    <a href="../"><p id="footer-copyright"></p></a>
+                </div>
+
+            </footer>
+
+        </div>
+        <script src="scripts/script.js" async defer></script>
+        <script src="scripts/windchill.js" async defer></script>
+    </body>
+</html>

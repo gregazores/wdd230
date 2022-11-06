@@ -341,7 +341,7 @@ footer .footer-contact {
 
 .hero-div .content-container h1 {
     font-size: 5rem;
-    line-height: 5rem;
+    line-height: 6rem;
     margin-bottom: 90px;
     text-transform: uppercase;
 }
@@ -744,7 +744,10 @@ footer .footer-contact {
     opacity: 100%;
 }
 
-.bottom-content h3 {
+.bottom-content h3,
+.join-page legend,
+.join-page .feature-wrapper > .common-header-three,
+.join-page .business-info > p {
     margin-top: 20px;
     color: #303030;
     font-weight: 700;
@@ -752,11 +755,119 @@ footer .footer-contact {
 }
 
 .bottom-content p,
-.demographic-column p {
+.demographic-column p,
+.page-sections label,
+.membership-info > label span,
+.membership-description,
+.benefits li,
+.benefits li::marker {
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 1.9rem;
 }
+
+/* *****JOIN PAGE STYLING***** */
+/*
+.join-page .discover-divider {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+*/
+
+.join-page .demographic-column {
+    margin-right: 30px;
+}
+
+.join-page .demographic-column form fieldset{
+    padding: 60px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.join-page legend {
+    padding: 0 10px;
+}
+
+.personal-info label {
+    margin-top: 20px;
+    display: block;
+}
+
+.personal-info .req span {
+    color: #EF233C;
+}
+
+.personal-info label input {
+    width: 100%;
+}
+
+.membership-info > label {
+    margin-top: 10px;
+}
+
+.membership-info > label span {
+    margin-left: 10px;
+}
+
+.business-info {
+    padding-top: 20px;
+}
+
+.business-info .text-box {
+    width: 100%;
+}
+
+#joinForm .submit-button {
+    display: block;
+    text-align: center;
+}
+
+.join-page .feature-column {
+    margin-top: 12px;
+    padding: 50px;
+    border-left: 0px;
+    background-color: #E1E5F2;
+}
+
+.join-page .feature-column .feature-wrapper h3 {
+    margin-top: 0;
+}
+
+.join-page .membership-fee {
+    display: flex;
+    justify-content: center;
+    font-size: 6rem;
+    line-height: 5rem;
+    font-weight: 700;
+    letter-spacing: -.5rem;
+    margin: 40px 0;
+    color: #00BFF3;
+}
+
+.join-page .membership-fee span {
+    font-size: 2rem;
+}
+
+.join-page .membership-fee span:last-child {
+    margin-left: 15px;
+    align-self: flex-end;
+}
+
+.benefits li {
+    color: #303030;
+    margin: 25px;
+}
+
+.benefits li::marker {
+    content: '✓ ';
+    color: #00BFF3;
+    font-weight: 700;
+}
+
+
 
 
 

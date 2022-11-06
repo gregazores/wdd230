@@ -57,6 +57,7 @@ images.forEach(image => {
     imgObserver.observe(image)
 })
 
+/*
 //localStorage.clear()
 
 if (localStorage.hasOwnProperty("firstVisit") == false) {
@@ -79,6 +80,8 @@ if (86400000 < difference) {
     alert(`It's been ${days} days since your last visit. Welcome Back`)
 }
 }
+
+*/
 
 
 

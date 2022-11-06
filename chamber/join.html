@@ -35,7 +35,7 @@
                         <li class="close-icon"><button type="button" onclick=addActive()>x</button></li>
                         <li><a href="discover.html">Discover</a></li>
                         <li><a href="#">Directory</a></li>
-                        <li><a href="#">Join</a></li>
+                        <li><a href="join.html">Join</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </nav>
@@ -51,7 +51,7 @@
                 </div>
             </header>
             
-            <main class="discover-page main-content">
+            <main class="join-page discover-page main-content">
                 <div class="main-content-wrapper">
 
                     <section class="page-sections page-section-one hero">
@@ -70,6 +70,89 @@
                                 </div>
 
                             </div>
+                        </div>
+                    </section>
+
+                    <section class="page-sections page-section-two">
+                        <div class="discover-divider">
+
+                            <div class="demographic-column">
+                                <form id="joinForm" action="thankyou.html" method="get">   
+                                    <fieldset class="personal-info">
+                                        <legend>Your Information</legend>
+                                        <label class="req">First Name <span>*</span><input type="text" name="fname" required=""></label>
+                                        <label class="req">Last Name <span>*</span><input type="text" name="lname" required=""></label>
+                                        <label>Business Position Title <input type="text" name="businessPosition"></label>
+                                        <label class="req">Email <span>*</span><input type="email" name="email" placeholder="email@domain.com" required=""></label>
+                                        <label class="req">Phone <span>*</span><input type="tel" name="phone" placeholder="1230006280" required=""></label>
+                                        <label>Business Name <span>*</span><input type="text" name="businessName" required=""></label>
+                                    </fieldset>
+                                    <fieldset class="membership-info" >
+                                        <legend>Membership Plans</legend>
+                                        <label><input type="radio" name="membership" value="gold" required=""><span>Gold Membership</span></label>
+                                        <label><input type="radio" name="membership" value="silver" required=""><span>Silver Membership</span></label>
+                                        <label><input type="radio" name="membership" value="bronze" required=""><span>Bronze Membership</span></label>
+                                        <label><input type="radio" name="membership" value="non-profit" required=""><span>Non-Profit Membership</span></label>
+                                        <label class="business-info"><p>Tell Us About Your Business</p><textarea class="text-box" name="tbox" cols="6" rows="5"></textarea></label>
+                                    </fieldset>
+                                    <label class="submit-button"><input class="generic-button-blue" type="submit" value="Become a Member"></label>
+                                </form>
+                            </div>
+
+                            <div class="feature-column">
+
+                                <div class="feature-wrapper">
+                                        <h3 class="common-header-three">Gold Membership</h3>
+                                        <p class="membership-fee"><span>$</span>1k<span>/year</span></p>
+                                        <p class="membership-description">Ideal for establishing a reputation as a community investor and helping shape the community vision and landscape for area business.</p>
+                                        <ul class="benefits">
+                                            <li>Use of the Chamber Conference Center</li>
+                                            <li>Business After Hours monthly networking events </li>
+                                            <li>Chamber CEO personal visit annually</li>
+                                          </ul>
+                                </div>
+
+                                <div class="feature-wrapper">
+                                    <h3 class="common-header-three">Silver Membership</h3>
+                                    <p class="membership-fee"><span>$</span>1k<span>/year</span></p>
+                                    <p class="membership-description">Developed for businesses seeking to grow and gain greater visibility and influence within the Missoula area business community.</p>
+                                    <ul class="benefits">
+                                        <li>Use of the Chamber Conference Center</li>
+                                        <li>Business After Hours monthly networking events </li>
+                                        <li>Chamber CEO personal visit annually</li>
+                                      </ul>
+                                </div>
+
+                                <div class="feature-wrapper">
+                                    <h3 class="common-header-three">Bronze Membership</h3>
+                                    <p class="membership-fee"><span>$</span>1K<span>/year</span></p>
+                                    <p class="membership-description">Created for businesses to establish themselves as community supporters with additional opportunities for engagement.</p>
+                                    <ul class="benefits">
+                                        <li>Use of the Chamber Conference Center</li>
+                                        <li>Business After Hours monthly networking events </li>
+                                        <li>Chamber CEO personal visit annually</li>
+                                      </ul>
+                                </div>
+
+                                <div class="feature-wrapper">
+                                    <h3 class="common-header-three">Non-Profit Membership</h3>
+                                    <p class="membership-fee">FREE</p>
+                                    <p class="membership-description">For Non-Profit organizations looking to serve local communities. (Free of charge)</p>
+                                    <ul class="benefits">
+                                        <li>Use of the Chamber Conference Center</li>
+                                        <li>Business After Hours monthly networking events </li>
+                                        <li>Chamber CEO personal visit annually</li>
+                                      </ul>
+                                </div>
+
+
+
+
+
+
+
+
+
                         </div>
                     </section>
                        

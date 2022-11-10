@@ -280,6 +280,32 @@
         border-left: 0px;
     }
 
+    /* *****JOIN PAGE LAYOUT***** */
+    .join-page .demographic-column {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .join-page legend {
+        padding: 0px;
+    }
+
+    .join-page .demographic-column form fieldset {
+        padding: 60px 20px;
+        padding-top: 30px;
+    }
+
+    #joinForm input,
+    #joinForm textarea {
+        text-align: center;
+        width: 98%;
+    }
+
+    .join-page .feature-column {
+        margin-top: 150px;
+        padding: 50px 20px;
+    }
+
 }
 
 

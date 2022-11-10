@@ -83,6 +83,20 @@ if (86400000 < difference) {
 
 */
 
+//input validation Business Position Title
+function validate() {
+    var exp = /^[A-Za-z0-9\s-]+$/
+    var business_post = document.getElementById('business_position').value
+    var result = exp.test(business_post)
+
+    if (result == false || business_post.length < 7) {
+        document.getElementById('business-pos-error').style.display = 'block'
+        return false
+    } else {
+        document.getElementById('business-pos-error').style.display = 'none'
+    }
+}
+
 
 
 

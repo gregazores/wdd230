@@ -187,6 +187,29 @@
         line-height: 1.7rem;
     }
 
+    /* *****JOIN PAGE LAYOUT***** */
+    #joinForm input {
+      text-align: center;
+      width: 96%;
+      height: 40px;
+    }
+
+    #joinForm .generic-button-blue {
+        height: revert;
+    }
+
+    .membership-info > label {
+        margin-top: 60px;
+    }
+    
+    .membership-info > label span {
+        margin-left: 10px;
+    }
+
   }
+
+
+
+
 
   

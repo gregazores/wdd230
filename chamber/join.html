@@ -77,7 +77,7 @@
                         <div class="discover-divider">
 
                             <div class="demographic-column">
-                                <form id="joinForm" action="thankyou.html" method="get">   
+                                <form id="joinForm" action="thankyou.html" method="get" onsubmit="return validate()">   
                                     <fieldset class="personal-info">
                                         <legend>Your Information</legend>
                                         <label class="req">First Name <span>*</span><input type="text" name="fname" required=""></label>
@@ -85,7 +85,8 @@
                                         <label>Business Name <span>*</span><input type="text" name="businessName" required=""></label>
                                         <label class="req">Email <span>*</span><input type="email" name="email" placeholder="email@domain.com" required=""></label>
                                         <label class="req">Phone <span>*</span><input type="tel" name="phone" placeholder="1230006280" required=""></label>
-                                        <label>Business Position Title <input type="text" name="businessPosition"></label>
+                                        <label>Business Position Title<input id="business_position" type="text" name="businessPosition"></label>
+                                        <p id="business-pos-error">Will only accept alpha characters, hyphens, and space. Minimum seven characters</p>
                                     </fieldset>
                                     <fieldset class="membership-info" >
                                         <legend>Membership Plans</legend>

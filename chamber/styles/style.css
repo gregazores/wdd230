@@ -784,12 +784,12 @@ footer .footer-contact {
 }
 
 .personal-info label {
-    margin-top: 20px;
+    margin-top: 30px;
     display: block;
 }
 
 .personal-info label input:required {
-    border: solid 2px #EF233C;
+    border: solid 1px #EF233C;
 }
 
 .personal-info .req span {
@@ -798,6 +798,15 @@ footer .footer-contact {
 
 .personal-info label input {
     width: 100%;
+}
+
+#business-pos-error {
+    display: none;
+    margin-top: 7px;
+    color: #EF233C;
+    font-size: .9rem;
+    letter-spacing: 3px;
+    line-height: 1.2rem;
 }
 
 .membership-info > label {

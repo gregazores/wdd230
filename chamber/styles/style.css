@@ -747,7 +747,7 @@ footer .footer-contact {
 .bottom-content h3,
 .join-page legend,
 .join-page .feature-wrapper > .common-header-three,
-.join-page .business-info > p {
+.join-page .business-info > span {
     margin-top: 20px;
     color: #303030;
     font-weight: 700;
@@ -871,70 +871,6 @@ footer .footer-contact {
     color: #00BFF3;
     font-weight: 700;
 }
-
-
-
-
-
-
-/*
-.discover-page .page-sections {
-    margin-top: 70px;
-    background-color: #fff;
-    box-shadow: none;
-}
-
-.discover-page .page-sections:first-child {
-    margin-top: 30px;
-}
-
-.discover-page .page-sections .common-text-card.card-news-release {
-    width: 100%;
-
-}
-
-.discover-page .page-sections picture img {
-    width: 100%;
-    box-shadow: 5px 5px 10px #30303049;
-}
-
-.discover-page .main-content-wrapper .page-sections.common-card .common-text-card {
-    position: revert;
-    top: 0;
-    left: 0;
-    right: 0;
-    transform: revert;
-    padding: 30px;
-}
-
-
-.discover-page .bar-divider {
-    width: 40%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

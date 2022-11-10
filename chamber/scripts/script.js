@@ -57,8 +57,10 @@ images.forEach(image => {
     imgObserver.observe(image)
 })
 
-/*
+
 //localStorage.clear()
+
+
 
 if (localStorage.hasOwnProperty("firstVisit") == false) {
     localStorage.setItem("firstVisit", d.getTime());
@@ -68,20 +70,21 @@ localStorage.setItem("current-visit", d.getTime());
 let difference = parseInt(localStorage.getItem("current-visit")) - parseInt(localStorage.getItem("firstVisit"))
 
 if (difference < 30000) {
-    alert('Welcome! This is your first visit')
+    document.querySelector(".current-date p").innerHTML = fulldateUK + '<br><p>Welcome! This is your first visit</p>'
 } else {
 
 if (43200000 < difference &&  difference < 86400000) {
-    alert('Wow! Another visit for the same day? Welcome again.')
+    document.querySelector(".current-date p").innerHTML = fulldateUK + '<br><p>Welcome Back!</p>'
 }
 
 if (86400000 < difference) {
     days = Math.round(difference/86400000)
-    alert(`It's been ${days} days since your last visit. Welcome Back`)
+    document.querySelector(".current-date p").innerHTML = fulldateUK + `<br><p>Welcome Back! It's been ${days} days since your last visit.</p>`
 }
 }
 
-*/
+
+
 
 //input validation Business Position Title
 function validate() {

@@ -298,12 +298,27 @@
     #joinForm input,
     #joinForm textarea {
         text-align: center;
-        width: 98%;
+        width: 90%;
+        height: 50px;
     }
+
+    #joinForm textarea {
+        height: 200px;
+    }
+
+
+    #joinForm .generic-button-blue {
+        height: revert;
+    }
+
 
     .join-page .feature-column {
         margin-top: 150px;
         padding: 50px 20px;
+    }
+
+    .membership-info > label {
+        margin-top: 60px;
     }
 
 }

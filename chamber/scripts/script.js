@@ -2,29 +2,10 @@
 let d = new Date()
 //format the date into a UK format date
 let fulldateUK = new Intl.DateTimeFormat("en-UK", {
-	dateStyle: "full",
+	dateStyle: "full"
     //timeStyle: 'long'
 }).format(d);
 document.querySelector(".current-date p").innerHTML = fulldateUK
-
-
-
-//A hidden field that contains the current date and time that the form was loaded by the user.
-document.getElementById("hidden-current-date").value = fulldateUK
-//hidden-current-time
-var hours = d.getHours()
-var mins = d.getMinutes()
-var seconds = d.getSeconds()
-if (hours < 10) {
-    hours = "0" + hours;
-  }
-  if (mins < 10) {
-    mins = "0" + mins;
-  }
-document.getElementById("hidden-current-time").value = hours + ":" + mins + ":" + seconds 
-
-
-
 
 //Resposive Menu Scripts
 function addActive(){
@@ -139,20 +120,17 @@ function checkSize() {
     }
 }
 
-
-
-
-/*
-
-formLoad.addEventListener('load', () => {
-//hidden-current-date
-
-alert('I was loaded')
-
-})
-
-
-
-*/
-
+//A hidden field that contains the current date and time that the form was loaded by the user.
+document.getElementById("hidden-current-date").value = fulldateUK
+//hidden-current-time
+var hours = d.getHours()
+var mins = d.getMinutes()
+var seconds = d.getSeconds()
+if (hours < 10) {
+    hours = "0" + hours;
+  }
+  if (mins < 10) {
+    mins = "0" + mins;
+  }
+document.getElementById("hidden-current-time").value = hours + ":" + mins + ":" + seconds 
 

@@ -32,7 +32,7 @@ function addActive(){
 }
 
 //se JavaScript to display a banner on Mondays or Tuesdays only at the very top of the page that says "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m." Make sure your design matches your schema for the site.
-/*
+
 let theDay = d.getDay()
 window.addEventListener('load', (event) => {
     if ( theDay == 1 || theDay == 2) {
@@ -43,7 +43,7 @@ window.addEventListener('load', (event) => {
         console.log("other days")
     }
 });
-*/
+
 
 //Lazy Loading Script
 const images = document.querySelectorAll('[data-src]')

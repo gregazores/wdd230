@@ -3,15 +3,36 @@ let d = new Date()
 //format the date into a UK format date
 let fulldateUK = new Intl.DateTimeFormat("en-UK", {
 	dateStyle: "full",
-    timeStyle: 'short'
+    //timeStyle: 'long'
 }).format(d);
 document.querySelector(".current-date p").innerHTML = fulldateUK
+
+
+
+//A hidden field that contains the current date and time that the form was loaded by the user.
+document.getElementById("hidden-current-date").value = fulldateUK
+//hidden-current-time
+var hours = d.getHours()
+var mins = d.getMinutes()
+var seconds = d.getSeconds()
+if (hours < 10) {
+    hours = "0" + hours;
+  }
+  if (mins < 10) {
+    mins = "0" + mins;
+  }
+document.getElementById("hidden-current-time").value = hours + ":" + mins + ":" + seconds 
+
+
+
 
 //Resposive Menu Scripts
 function addActive(){
     document.querySelector("#responsive-nav").classList.toggle("active")
 }
 
+//se JavaScript to display a banner on Mondays or Tuesdays only at the very top of the page that says "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m." Make sure your design matches your schema for the site.
+/*
 let theDay = d.getDay()
 window.addEventListener('load', (event) => {
     if ( theDay == 1 || theDay == 2) {
@@ -22,6 +43,7 @@ window.addEventListener('load', (event) => {
         console.log("other days")
     }
 });
+*/
 
 //Lazy Loading Script
 const images = document.querySelectorAll('[data-src]')
@@ -57,11 +79,8 @@ images.forEach(image => {
     imgObserver.observe(image)
 })
 
-
-//localStorage.clear()
-
-
-
+//Using local storage, display the amount of time in days (rounded to a whole number) between user visits to this page by the user's agent (browser). You may elect to display this information where you deem fit on the page.
+//localStorage.clear() => to reset local storage
 if (localStorage.hasOwnProperty("firstVisit") == false) {
     localStorage.setItem("firstVisit", d.getTime());
 }
@@ -101,11 +120,6 @@ function validate() {
 }
 
 
-
-
-
-
-
 //Footer Meta scripts
 //Will change content depending on the size of the window
 let last_mod = document.lastModified
@@ -125,5 +139,20 @@ function checkSize() {
     }
 }
 
+
+
+
+/*
+
+formLoad.addEventListener('load', () => {
+//hidden-current-date
+
+alert('I was loaded')
+
+})
+
+
+
+*/
 
 

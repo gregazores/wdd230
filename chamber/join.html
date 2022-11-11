@@ -58,9 +58,9 @@
                         <div class="hero-div">
 
                             <picture class="responsive-image">
-                                <source media="(max-width:500px)" srcset="images/wdd230-org-small.jpg">
-                                <source media="(max-width:850px)" srcset="images/wdd230-org-medium.jpg">
-                                <img src="images/wdd230-org.jpg" alt="hero image  office setting">
+                                <source media="(max-width:500px)" srcset="images/joinsmall.jpg">
+                                <source media="(max-width:850px)" srcset="images/joinmedium.jpg">
+                                <img src="images/joinlarge.jpg" alt="hero image  office setting">
                             </picture>
 
                             <div class="absolute-overlay"></div>
@@ -77,7 +77,7 @@
                         <div class="discover-divider">
 
                             <div class="demographic-column">
-                                <form id="joinForm" action="thankyou.html" method="get" onsubmit="return validate()">   
+                                <form id="joinForm" action="thankyou.html" method="get" onload="hiddenInfo" onsubmit="return validate()">   
                                     <fieldset class="personal-info">
                                         <legend>Your Information</legend>
                                         <label class="req">First Name <span>*</span><input type="text" name="fname" required=""></label>
@@ -95,6 +95,8 @@
                                         <label><input type="radio" name="membership" value="bronze" required=""><span>Bronze Membership</span></label>
                                         <label><input type="radio" name="membership" value="non-profit" required=""><span>Non-Profit Membership</span></label>
                                         <label class="business-info"><span>Tell Us About Your Business</span><textarea class="text-box" name="tbox" cols="6" rows="5"></textarea></label>
+                                        <label><input type="hidden" id="hidden-current-date" name="hidden-current-date" value="CurrentTime"> </label>
+                                        <label><input type="hidden" id="hidden-current-time" name="hidden-current-time" value="CurrentDate"> </label>
                                     </fieldset>
                                     <label class="submit-button"><input class="generic-button-blue" type="submit" value="Become a Member"></label>
                                 </form>
@@ -104,7 +106,7 @@
 
                                 <div class="feature-wrapper">
                                         <h3 class="common-header-three">Gold Membership</h3>
-                                        <p class="membership-fee"><span>$</span>1k<span>/year</span></p>
+                                        <p class="membership-fee"><span>$</span>3k<span>/year</span></p>
                                         <p class="membership-description">Ideal for establishing a reputation as a community investor and helping shape the community vision and landscape for area business.</p>
                                         <ul class="benefits">
                                             <li>Use of the Chamber Conference Center</li>
@@ -115,23 +117,23 @@
 
                                 <div class="feature-wrapper">
                                     <h3 class="common-header-three">Silver Membership</h3>
-                                    <p class="membership-fee"><span>$</span>1k<span>/year</span></p>
+                                    <p class="membership-fee"><span>$</span>2k<span>/year</span></p>
                                     <p class="membership-description">Developed for businesses seeking to grow and gain greater visibility and influence within the Missoula area business community.</p>
                                     <ul class="benefits">
                                         <li>Use of the Chamber Conference Center</li>
-                                        <li>Business After Hours monthly networking events </li>
-                                        <li>Chamber CEO personal visit annually</li>
+                                        <li>Network and join the committees</li>
+                                        <li>Membership decal to proudly display your community</li>
                                       </ul>
                                 </div>
 
                                 <div class="feature-wrapper">
                                     <h3 class="common-header-three">Bronze Membership</h3>
-                                    <p class="membership-fee"><span>$</span>1K<span>/year</span></p>
+                                    <p class="membership-fee"><span>$</span>1k<span>/year</span></p>
                                     <p class="membership-description">Created for businesses to establish themselves as community supporters with additional opportunities for engagement.</p>
                                     <ul class="benefits">
-                                        <li>Use of the Chamber Conference Center</li>
-                                        <li>Business After Hours monthly networking events </li>
-                                        <li>Chamber CEO personal visit annually</li>
+                                        <li>New member video shared via social media.</li>
+                                        <li>Link to your webpage from the Chamber’s Business Directory</li>
+                                        <li>Receive weekly Chamber Connections Newsletter and member eBlasts </li>
                                       </ul>
                                 </div>
 
@@ -140,21 +142,13 @@
                                     <p class="membership-fee">FREE</p>
                                     <p class="membership-description">For Non-Profit organizations looking to serve local communities. (Free of charge)</p>
                                     <ul class="benefits">
-                                        <li>Use of the Chamber Conference Center</li>
-                                        <li>Business After Hours monthly networking events </li>
-                                        <li>Chamber CEO personal visit annually</li>
+                                        <li>Opportunity to rent the Chamber Conference room at a discounted price</li>
+                                        <li>Member web page with detailed 50 word description of your business</li>
+                                        <li>Brochure/business card space in lobby at the Chamber office </li>
                                       </ul>
                                 </div>
 
                             </div>
-
-
-
-
-
-
-
-
 
                         </div>
                     </section>

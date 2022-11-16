@@ -673,27 +673,33 @@ footer .footer-contact {
 }
 
 /* *****DISCOVER PAGE STYLING***** */
+.single-page-layout .main-content-wrapper,
 .discover-page .main-content-wrapper {
     display: flex;
     flex-direction: column;
 }
 
+.single-page-layout .page-sections,
 .discover-page .page-sections {
     background-color: #fff;
 }
 
+.single-page-layout .main-content-wrapper .hero,
 .discover-page .main-content-wrapper .hero {
     height: 50vh;
 }
 
+.single-page-layout .main-content-wrapper .page-sections.page-section-one.hero .inner-content-container,
 .discover-page .main-content-wrapper .page-sections.page-section-one.hero .inner-content-container {
     padding: 50px;
 }
 
+.single-page-layout .main-content-wrapper .page-sections.page-section-one.hero .inner-content-container h1,
 .discover-page .main-content-wrapper .page-sections.page-section-one.hero .inner-content-container h1 {
     margin-bottom: 0;
 }
 
+.single-page-layout .page-section-two,
 .discover-page .page-section-two {
     margin-top: 60px;
     box-shadow: none;
@@ -708,6 +714,7 @@ footer .footer-contact {
     padding-right: 40px;
 }
 
+.common-header-2,
 .demographic-column h2 {
     color: #303030;
     font-weight: 700;
@@ -754,13 +761,13 @@ footer .footer-contact {
     font-size: 1.5rem;
 }
 
-.bottom-content p,
 .demographic-column p,
 .page-sections label,
 .membership-info > label span,
 .membership-description,
 .benefits li,
-.benefits li::marker {
+.benefits li::marker,
+.views > p {
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 1.9rem;
@@ -871,6 +878,90 @@ footer .footer-contact {
     color: #00BFF3;
     font-weight: 700;
 }
+
+/* *****DIRECTORY PAGE STYLING***** */
+.business-directory-section {
+    text-align: center;
+}
+
+.business-directory-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.list-view {
+    margin: 50px 0;
+}
+
+#grid:hover, #list:hover {
+    transform: scale(1.05) translateY(0px);
+}
+
+#grid {
+    margin-right: 10px;
+}
+
+#list {
+    margin-left: 10px;
+}
+
+.directory-card {
+    text-align: left;
+    width: 31%;
+    box-shadow: 5px 5px 10px #30303092;
+    margin-bottom: 80px;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-container .views {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+.image-container > .generic-button-blue {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    transform: translateY(50%);
+}
+
+.views > p {
+    margin: 0;
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.6);
+    border: solid rgba(255, 255, 255, 0.6);
+    border-radius: 5px
+}
+.views > p > span {
+    top: 0;
+    font-size: 3rem;
+    margin-left: 25px;
+    position: absolute;
+    padding: 11.5px;
+    color: #ef233b97;
+    border: solid #ef233b97;
+    border-radius: 5px
+}
+
+.image-container img {
+    width: 100%;
+}
+
+.bottom-content {
+    margin: 60px 20px 30px 20px;
+}
+
+.bottom-content .business-categories,
+.bottom-content .business-phone {
+    margin-top: 5px;
+}
+
+
 
 
 

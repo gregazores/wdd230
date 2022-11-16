@@ -257,7 +257,7 @@
     }
 
      /* *****DISCOVER PAGE LAYOUT***** */
-
+     .single-page-layout .main-content-wrapper .hero,
      .discover-page .main-content-wrapper .hero {
         height: 10vh;
     }

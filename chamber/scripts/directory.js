@@ -1,5 +1,4 @@
 const requestURL = '../json/data.json';
-const container = document.querySelector('.business-directory-container');
 
 fetch(requestURL)
   .then(function (response) {

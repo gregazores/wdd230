@@ -122,7 +122,7 @@ function checkSize() {
 
 //A hidden field that contains the current date and time that the form was loaded by the user.
 document.getElementById("hidden-current-date").value = fulldateUK
-//hidden-current-time
+console.log("working")
 var hours = d.getHours()
 var mins = d.getMinutes()
 var seconds = d.getSeconds()

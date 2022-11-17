@@ -23,7 +23,6 @@ function displayCompanies(company) {
             <p>${company.views} views <span>&#9825;</span></p>
         </div>
         <img loading="lazy" src="${company.image_url}" alt="business profile picture">
-        <a target="${company.website}" href="discover.html" class="generic-button-blue">Visit Site</a>
     </div>
 
     <div class="bottom-content">
@@ -31,6 +30,7 @@ function displayCompanies(company) {
         <p class="business-categories">${company.category}</p>
         <p class="business-address">📍 ${company.address}</p>
         <p class="business-phone">&#128222; ${company.phone}</p>
+        <a target="${company.website}" href="discover.html" class="generic-button-blue">Visit Site</a>
     </div>
     
     `

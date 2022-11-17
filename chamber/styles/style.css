@@ -909,25 +909,39 @@ footer .footer-contact {
 .directory-card {
     text-align: left;
     width: 31%;
-    box-shadow: 5px 5px 10px #30303092;
+    box-shadow: 5px 5px 10px #3030304d;
     margin-bottom: 80px;
+    transition: box-shadow .5s linear, transform .2s linear;
+}
+
+.directory-card:hover {
+    box-shadow: 5px 5px 10px #30303092;
+    transform: scale(1.01);
 }
 
 .image-container {
     position: relative;
+    overflow: hidden;
+}
+
+.image-container .absolute-overlay {
+    z-index: 500;
 }
 
 .image-container .views {
     position: absolute;
-    left: 20px;
+    left: 30px;
     top: 20px;
+    z-index: 1000;
 }
 
-.image-container > .generic-button-blue {
-    position: absolute;
-    bottom: 0;
-    left: 20px;
-    transform: translateY(50%);
+.image-container img {
+    transform: scale(1.05);
+    transition: transform .5s linear;
+}
+
+.image-container:hover img {
+    transform: scale(1.1);
 }
 
 .views > p {
@@ -935,8 +949,15 @@ footer .footer-contact {
     padding: 10px;
     color: rgba(255, 255, 255, 0.6);
     border: solid rgba(255, 255, 255, 0.6);
-    border-radius: 5px
+    border-radius: 5px;
+    transition: color .3s, border .3s;
 }
+
+.views > p:hover {
+    color: rgba(255, 255, 255, 1);
+    border: solid rgba(255, 255, 255, 1); 
+}
+
 .views > p > span {
     top: 0;
     font-size: 3rem;
@@ -945,7 +966,13 @@ footer .footer-contact {
     padding: 11.5px;
     color: #ef233b97;
     border: solid #ef233b97;
-    border-radius: 5px
+    border-radius: 5px;
+    transition: color .3s, border .3s;
+}
+
+.views > p:hover > span {
+    color: #ef233b;
+    border: solid #ef233b; 
 }
 
 .image-container img {
@@ -953,13 +980,28 @@ footer .footer-contact {
 }
 
 .bottom-content {
-    margin: 60px 20px 30px 20px;
+    padding: 60px 30px 30px 30px;
+    position: relative;
+}
+
+.bottom-content .generic-button-blue {
+    position: absolute;
+    top: 0;
+    left: 30px;
+    transform: translateY(-50%);
+    z-index: 2000;
+}
+
+.bottom-content .generic-button-blue:hover {
+    background-color: #bfdbf7;
 }
 
 .bottom-content .business-categories,
 .bottom-content .business-phone {
     margin-top: 5px;
 }
+
+/* *****grid view***** */
 
 
 

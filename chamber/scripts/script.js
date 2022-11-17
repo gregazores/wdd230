@@ -61,7 +61,7 @@ images.forEach(image => {
 })
 
 //Using local storage, display the amount of time in days (rounded to a whole number) between user visits to this page by the user's agent (browser). You may elect to display this information where you deem fit on the page.
-localStorage.clear() //=> to reset local storage
+//localStorage.clear() //=> to reset local storage
 if (localStorage.hasOwnProperty("firstVisit") == false) {
     localStorage.setItem("firstVisit", d.getTime());
 }

@@ -1,0 +1,192 @@
+/* ---Phone View--- */
+
+@media screen and (max-width: 500px) {
+
+    /* *****UNIVERSAL STYLING***** */
+    * {
+        font-size: 20px;
+    }
+
+    header, .footer-container {
+        padding: 10px;
+    }
+
+    .page-logo-wrapper img{
+        width: 160%;
+        height: 160%;
+    }
+    
+    .page-header .social-with-burger {
+        margin-right: -15px;
+    }
+
+    .social-with-burger .hamburger-icon {
+        right: 10px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .social-with-burger .hamburger-icon button {
+        font-size: 1.5rem;
+        padding: 8px;
+    }
+
+    .page-navigation .close-icon button {
+        padding: 2px;
+    }
+
+    .generic-button-blue {
+        font-size: 1rem;
+        padding: 15px 25px;
+    }
+
+    /* Generic Footer Styling */
+    .footer-container {
+        display: block;
+        text-align: center;
+        padding: 30px;
+    }
+
+    footer .footer-logo-wrapper,
+    footer .footer-contact {
+        width: 100%;
+    }
+
+    .footer-contact ul {
+        margin-bottom: 0px;
+    }
+
+    .footer-container h2{
+        display: none;
+    }
+
+    .footer-meta-info {
+        padding: 2px 20px;
+
+    }
+
+    #footer-copyright {
+        font-size: .7rem;
+        font-weight: 300;
+    }
+
+
+    /* *****HOME PAGE LAYOUT***** */
+    .main-content-wrapper {
+        display: flex;
+        width: 100%;
+        margin: 30px auto;
+    }
+
+    .page-sections.hero .hero-div .inner-content-container {
+        padding: 50px 30px;
+    }
+
+    .hero-div .content-container h1 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin-bottom: 50px;
+    }
+
+    .page-sections.news-release {
+        height: 700px;
+        order: 4;
+    }
+
+    .page-sections.news-release > .card-news-release > p {
+        font-size: 1rem;
+    }
+
+    .spotlight-container {
+        box-shadow: 5px 5px 10px #30303000;
+    }
+
+    .page-sections.spotlight-one,
+    .page-sections.spotlight-two {
+        order: 5;
+        width: 100%;
+        padding: 0
+    }
+
+    .page-sections.spotlight-one {
+        margin-left: -20px;
+    }
+
+    .spotlight-container .content-container .lower-part {
+        margin-top: 200px;
+    }
+
+    .left-sidebar-event {
+        width: 100%;
+    }
+
+    .page-sections.left-sidebar-event {
+        order: 2;
+    }
+
+    .left-sidebar-weather {
+        width: 100%;
+    }
+
+    .page-sections.left-sidebar-weather {
+        order: 3;
+        height: 300px;
+    }
+
+    .left-sidebar-weather .weather-info-one img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .left-sidebar-weather .weather .weather-info-one p {
+        font-size: 2rem;
+    }
+
+    .left-sidebar-weather .weather table td {
+        font-size: .9rem;
+    }
+
+    .left-sidebar-event .common-text-card.event p,
+    .left-sidebar-event p a {
+        font-size: 1rem;
+        line-height: 1.7rem;
+    }
+
+    .page-sections.left-sidebar-join  {
+        display: none;
+    }
+
+    /* *****DISCOVER PAGE STYLING***** */
+    .discover-page .hero-div .content-container h1,
+    .demographic-column h2 {
+        line-height: 2.5rem;
+        font-size: 2.2rem;
+
+    }
+
+    .discover-divider {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .bottom-content h3 {
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+    }
+
+    .bottom-content,
+    .demographic-column {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .bottom-content p,
+    .demographic-column p {
+        font-size: 1.1rem;
+        font-weight: 400;
+        line-height: 1.7rem;
+    }
+
+  }
+
+  

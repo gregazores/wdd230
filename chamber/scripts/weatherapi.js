@@ -49,18 +49,18 @@ function displayResults(weatherData) {
     windSpeed.innerHTML = `${weatherData.wind.speed} mi/hr`
     //windChill
     const windChill = document.querySelector("#wind-chill")
-    windChill.innerHTML = `${computeWindChill(weatherData.main.temp.toFixed(0), weatherData.wind.speed)} &#8457;`
-    //windChill.innerHTML = `${computeWindChill(49, 6)} &#8457;` #--> this is test wind chill
+    windChill.innerHTML = `${computeWindChill(weatherData.main.temp.toFixed(0), weatherData.wind.speed)}`
+    //windChill.innerHTML = `${computeWindChill(49, 6)}` //--> this is test wind chill
 
     //change background color of weather section
     const lastCharacter = weatherData.weather[0].icon.charAt(weatherData.weather[0].icon.length-1)
     if (lastCharacter == 'n') {
         document.querySelector(".page-sections.common-card.page-section-seven.left-sidebar-weather").style.backgroundColor = '#BFDBF7'
-        console.log('it was N')
+
     }
     if (lastCharacter == 'd') {
         document.querySelector(".page-sections.common-card.page-section-seven.left-sidebar-weather").style.backgroundColor = '#E1E5F2'
-        console.log('it was N')
+
     }
 }
 
@@ -68,7 +68,7 @@ function displayResults(weatherData) {
 function computeWindChill(temp, speed) {
     if (temp <= 50 && speed > 3) {
         let chill = 35.74 + (0.6215*temp) - (35.75*(speed**.16)) + (.4275*temp*(speed**.16))
-        return Math.round(chill)
+        return `${Math.round(chill)} &#8457;`
     } else {
         return `N/A` 
     }

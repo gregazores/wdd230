@@ -420,8 +420,13 @@ footer .footer-contact {
     text-align: center;
 }
 
-.responsive-image img {
+
+/* Dont display the responsive image in the home page for now */
+.home-page .page-section-one.hero .responsive-image {
     display: none;
+}
+
+.responsive-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;

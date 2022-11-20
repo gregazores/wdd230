@@ -24,7 +24,7 @@ Now create an "url" variable using const that stores the 'https://api.openweathe
 URL as demonstrated in in the API documentation given.
 */
 
-const url = 'https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid=1c04d13839472f4456588c22392bbf46';
+const url = 'https://api.openweathermap.org/data/2.5/weather?q=Fairbanks&appid=1c04d13839472f4456588c22392bbf46&units=imperial';
 
 async function apiFetch() {
     try {
@@ -32,7 +32,7 @@ async function apiFetch() {
       if (response.ok) {
         const data = await response.json();
         console.log(data); // this is for testing the call
-        // displayResults(data);
+        displayResults(data);
       } else {
           throw Error(await response.text());
       }
@@ -43,6 +43,16 @@ async function apiFetch() {
   
   apiFetch();
 
+function displayResults(weatherData) {
+    currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
+
+    const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
+    const desc = weatherData.weather[0].description;
+  
+    weatherIcon.setAttribute('src', iconsrc);
+    weatherIcon.setAttribute('alt', desc);
+    captionDesc.textContent = desc;
+}
 
 
 //Footer Meta scripts

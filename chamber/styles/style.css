@@ -308,6 +308,11 @@ footer .footer-contact {
     color: #fff;
 }
 
+.footer-meta-info a:nth-child(2) p {
+    font-weight: 100;
+    font-size: .8rem;
+}
+
 
 
 /* *****HOME PAGE STYLING***** */

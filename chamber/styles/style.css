@@ -772,6 +772,7 @@ footer .footer-contact {
     font-size: 1.5rem;
 }
 
+.bottom-content p,
 .demographic-column p,
 .page-sections label,
 .membership-info > label span,
@@ -801,24 +802,24 @@ footer .footer-contact {
     padding: 0 10px;
 }
 
-.personal-info label {
+.join-page .personal-info label {
     margin-top: 30px;
     display: block;
 }
 
-.personal-info label input:required {
+.join-page .personal-info label input:required {
     border: solid 1px #EF233C;
 }
 
-.personal-info .req span {
+.join-page .personal-info .req span {
     color: #EF233C;
 }
 
-.personal-info label input {
+.join-page .personal-info label input {
     width: 100%;
 }
 
-#business-pos-error {
+.join-page #business-pos-error {
     display: none;
     margin-top: 7px;
     color: #EF233C;
@@ -827,23 +828,23 @@ footer .footer-contact {
     line-height: 1.2rem;
 }
 
-.membership-info > label {
+.join-page .membership-info > label {
     margin-top: 10px;
 }
 
-.membership-info > label span {
+.join-page .membership-info > label span {
     margin-left: 10px;
 }
 
-.business-info {
+.join-page .business-info {
     padding-top: 20px;
 }
 
-.business-info .text-box {
+.join-page .business-info .text-box {
     width: 100%;
 }
 
-#joinForm .submit-button {
+.join-page #joinForm .submit-button {
     display: block;
     text-align: center;
 }
@@ -903,23 +904,23 @@ footer .footer-contact {
     justify-content: space-between;
 }
 
-.card-view-buttons {
+.business-directory-container .card-view-buttons {
     margin: 50px 0;
 }
 
-#grid:hover, #list:hover {
+.business-directory-container #grid:hover, #list:hover {
     transform: scale(1.05) translateY(0px);
 }
 
-#grid {
+.business-directory-container #grid {
     margin-right: 10px;
 }
 
-#list {
+.business-directory-container #list {
     margin-left: 10px;
 }
 
-.directory-card {
+.business-directory-container .directory-card {
     text-align: left;
     width: 31%;
     box-shadow: 5px 5px 10px #3030304d;
@@ -927,37 +928,37 @@ footer .footer-contact {
     transition: box-shadow .5s linear, transform .2s linear;
 }
 
-.directory-card:hover {
+.business-directory-container .directory-card:hover {
     box-shadow: 5px 5px 10px #30303092;
     transform: scale(1.01);
 }
 
-.image-container {
+.business-directory-container .image-container {
     position: relative;
     overflow: hidden;
 }
 
-.image-container .absolute-overlay {
+.business-directory-container .image-container .absolute-overlay {
     z-index: 500;
 }
 
-.image-container .views {
+.business-directory-container .image-container .views {
     position: absolute;
     left: 30px;
     top: 20px;
     z-index: 1000;
 }
 
-.image-container img {
+.business-directory-container .image-container img {
     transform: scale(1.05);
     transition: transform .5s linear;
 }
 
-.image-container:hover img {
+.business-directory-container .image-container:hover img {
     transform: scale(1.1);
 }
 
-.views > p {
+.business-directory-container .views > p {
     margin: 0;
     padding: 10px;
     color: rgba(255, 255, 255, 0.6);
@@ -966,12 +967,12 @@ footer .footer-contact {
     transition: color .3s, border .3s;
 }
 
-.views > p:hover {
+.business-directory-container .views > p:hover {
     color: rgba(255, 255, 255, 1);
     border: solid rgba(255, 255, 255, 1); 
 }
 
-.views > p > span {
+.business-directory-container .views > p > span {
     top: 0;
     font-size: 3rem;
     margin-left: 25px;
@@ -983,21 +984,21 @@ footer .footer-contact {
     transition: color .3s, border .3s;
 }
 
-.views > p:hover > span {
+.business-directory-container .views > p:hover > span {
     color: #ef233b;
     border: solid #ef233b; 
 }
 
-.image-container img {
+.business-directory-container .image-container img {
     width: 100%;
 }
 
-.bottom-content {
+.business-directory-container .bottom-content {
     padding: 60px 30px 30px 30px;
     position: relative;
 }
 
-.bottom-content .generic-button-blue {
+.business-directory-container .bottom-content .generic-button-blue {
     position: absolute;
     top: 0;
     left: 30px;
@@ -1005,12 +1006,12 @@ footer .footer-contact {
     z-index: 2000;
 }
 
-.bottom-content .generic-button-blue:hover {
+.business-directory-container .bottom-content .generic-button-blue:hover {
     background-color: #bfdbf7;
 }
 
-.bottom-content .business-categories,
-.bottom-content .business-phone {
+.business-directory-container .bottom-content .business-categories,
+.business-directory-container .bottom-content .business-phone {
     margin-top: 5px;
 }
 

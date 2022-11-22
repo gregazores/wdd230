@@ -1,6 +1,33 @@
 /* *****IMPORTS***** */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* 
+
+Some Color Palette:
+Primary: https://coolors.co/00171f-084b83-42bfdd-bbe6e4-f0f6f6
+#00171F, #084B83, #42BFDD, #BBE6E4, #F0F6F6
+Back-up: https://coolors.co/022b3a-303030-1f7a8c-bfdbf7-e1e5f2
+#022B3A, #1F7A8C, #BFDBF7, #E1E5F2, #303030
+
+
+sliding carousel
+https://www.youtube.com/watch?v=VYsVOamdB0g
+https://www.youtube.com/watch?v=gBzsE0oieio
+https://www.youtube.com/watch?v=ll18OYGsxLc
+https://www.youtube.com/watch?v=D9RJ9_jZc2Q
+
+*/
+
+:root {
+	--back: #1F7A8C;
+  --back2: #BFDBF7;
+  --foredark: #0000;
+	--forelight: hsla(0,0%,100%,1);
+	--border: #303030;
+	--borderlight: #303030;
+	--shadow: #30303092;
+	--zebra: #E1E5F2;
+}
 
 /* *****UNIVERSAL STYLING***** */
 body {
@@ -17,18 +44,143 @@ body {
     font-size: 16px;
     font-weight: 500;
     color: #303030;
-    letter-spacing: 4px;   
+    letter-spacing: 3px;   
+    line-height: 1.7rem;
 }
 
  h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair Display', serif;  
-    letter-spacing: 4px;
-    color: #303030;
+    letter-spacing: 5px;
+    margin: 0;
+    color: #fff;
+    line-height: 1.8rem;
 }
 
+ul li,
+ul li a {
+    list-style: none;
+    color: #fff
+}
+
+a {
+    text-decoration: none;
+}
+
+
 .page-wrapper {
-    max-width: 650px;
+    width: 100%;
     margin: auto;
     padding: 0;
 }
+/* Generic Styling */
+header {
+    text-align: center;
+    background-color: #1F7A8C;
+    padding: 20px 100px;
+    box-shadow: 5px 5px 10px #30303092
+}
 
+header h1 {
+    font-size: 3rem;
+    padding: 50px  0;
+}
+
+.main-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+/* Generic Misc Element Styling */
+.bar-divider {
+    width: 100%;
+    height: 2px;
+    background-color: #303030;
+    margin-top: 10px;
+}
+
+/* Propthets Page Styling */
+.main-content-wrapper {
+    max-width: 80%;
+    margin: 50px auto;
+}
+
+.main-content-wrapper .cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cards section {
+    background-color: #E1E5F2;
+    text-align: center;
+    width: 18%;
+    padding: 50px 40px 30px 40px;
+    margin-bottom: 50px;
+}
+
+.cards section h2 {
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    line-height: 1.7rem;
+    color: #303030;
+}
+
+.cards section p:first-of-type {
+    margin-top: 30px;
+    margin-bottom: -15px;
+}
+
+.cards section img {
+    width: 100%;
+}
+
+
+
+
+/* Generic Footer Styling */
+footer {
+    background-color: #1F7A8C;
+}
+
+footer .footer-logo-wrapper,
+footer .footer-contact {
+    width: 100%;
+}
+
+.footer-container {
+    padding: 50px 100px;
+    text-align: center;
+
+}
+
+.footer-container p {
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+#footer-copyright {
+    font-size: .9rem;
+    font-weight: 300;
+}
+
+#footer-copyright strong {
+    color: #fff;
+    font-weight: 500;
+}
+
+.footer-meta-info {
+    padding: 2px 0;
+    text-align: center;
+    background-color: #022B3A;
+}
+
+.footer-meta-info a p {
+    color: #fff;
+}

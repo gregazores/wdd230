@@ -1,0 +1,51 @@
+/* ---Phone View--- */
+
+@media screen and (max-width: 500px) {
+
+    /* *****UNIVERSAL STYLING***** */
+    * {
+        font-size: 20px;
+    }
+
+    header, .footer-container {
+        padding: 10px;
+    }
+
+    .cards section {
+        width:100%;
+    }
+
+    
+
+    /* Generic Footer Styling */
+    .footer-container {
+        display: block;
+        text-align: center;
+        padding: 30px;
+    }
+
+    footer .footer-logo-wrapper,
+    footer .footer-contact {
+        width: 100%;
+    }
+
+    .footer-contact ul {
+        margin-bottom: 0px;
+    }
+
+    .footer-container h2{
+        display: none;
+    }
+
+    .footer-meta-info {
+        padding: 2px 20px;
+
+    }
+
+    #footer-copyright {
+        font-size: .7rem;
+        font-weight: 300;
+    }
+
+
+}  

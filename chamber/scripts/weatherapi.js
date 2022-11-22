@@ -44,6 +44,8 @@ function displayResults(weatherData) {
     weatherIcon.setAttribute('alt', desc);
     //temperature
     currentTemp.innerHTML = `${weatherData.main.temp.toFixed(0)}&#8457;`;
+    //weather description
+    document.querySelector("#weather-description").textContent = weatherData.weather[0].description
     //wind speed
     const windSpeed = document.querySelector("#wind-speed")
     windSpeed.innerHTML = `${weatherData.wind.speed} mi/hr`

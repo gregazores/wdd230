@@ -1,0 +1,68 @@
+/* *****MOBILE VIEWS STYLING***** */ 
+
+/* ---Tablet View--- */
+
+@media screen and (max-width: 850px) {
+
+    /* *****UNIVERSAL STYLING***** */
+    * {
+        font-size: 26px;
+    }
+
+    /* Generic Nav and Header Styling */
+    header, .footer-container {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+        padding: 50px 0;
+    }
+
+    /* Generic Misc Element Styling */
+    .page-sections.common-card .common-text-card p {
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 1.7rem;
+    }
+
+    .common-header-three {
+        font-size: 1.6rem;
+    }
+
+    /* Generic Footer Styling */
+    footer {
+        padding-top: 30px;
+    }
+
+    .footer-logo-wrapper > img {
+        width: 300px;
+    }
+
+    footer .footer-logo-wrapper,
+    footer .footer-contact {
+        width: 90%;
+    }
+
+    .footer-contact {
+        display: block;
+    }
+
+    .footer-contact h2 {
+        font-size: 1.5rem;
+    }
+
+    footer .footer-logo-wrapper h2,
+    .footer-contact ul li,
+    .footer-contact ul li a {
+        word-wrap: break-word;
+        font-size: 1rem;
+        line-height: 1.4rem;
+    }
+
+    .footer-meta-info {
+        padding: 2px 20px;
+
+    }
+
+}

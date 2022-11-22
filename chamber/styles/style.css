@@ -166,7 +166,8 @@ nav ul li a:hover {
     font-weight: 600;
     transition: all .2s linear;
     font-size: 1.5rem;
-    padding: 15px 25px;
+    padding: 10px 25px;
+    display: inline-block;
 }
 
 .generic-button-blue:hover {
@@ -500,7 +501,7 @@ footer .footer-contact {
 }
 
 .left-sidebar-join .content-container .join-slideshow {
-    margin-bottom: 170px;
+    margin-bottom: 190px;
 }
 
 .left-sidebar-join .content-container .bg-slideshow li {
@@ -530,7 +531,7 @@ footer .footer-contact {
     font-size: 1.4rem;
 }
 
-.left-sidebar-join:hover .content-container button {
+.left-sidebar-join:hover .content-container a {
     transform: scale(1.1) translateY(-4px);
 }
 

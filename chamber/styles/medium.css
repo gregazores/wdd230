@@ -324,27 +324,28 @@
     /* *****DIRECTORY PAGE STYLING***** */
 
     /* *****grid view***** */
-    .business-directory-container {
+    .business-directory-section .business-directory-container {
         padding-left: 20px;
         padding-right: 20px;
     }
 
-    .directory-card {
+    .business-directory-section .directory-card {
         width: 48%;
 
     }
 
     /* *****list view***** */
-    .business-directory-container.grid-list .directory-card {
+    .business-directory-section .business-directory-container.grid-list .directory-card {
         flex-direction: column;
     }
-    .business-directory-container.grid-list .image-container {
+
+    .business-directory-section .business-directory-container.grid-list .image-container {
         width: 100%;
         margin-top: 50px;
         margin-left: 50px;
     }
 
-    .business-directory-container.grid-list .image-container .views {
+    .business-directory-section .business-directory-container.grid-list .image-container .views {
         position: relative;
         width: fit-content;
         left: 0px;
@@ -353,7 +354,7 @@
         z-index: 1000;
     }
 
-    .business-directory-container.grid-list .bottom-content {
+    .business-directory-section .business-directory-container.grid-list .bottom-content {
         width: 100%;
         padding: 30px 0;
         margin-right: 0px;
@@ -361,11 +362,11 @@
         position: relative;
     }
 
-    .business-directory-container.grid-list .bottom-content div {
+    .business-directory-section .business-directory-container.grid-list .bottom-content div {
         display: block;
     }
 
-    .business-directory-container.grid-list .bottom-content .generic-button-blue {
+    .business-directory-section .business-directory-container.grid-list .bottom-content .generic-button-blue {
         position: relative;
         top: 0;
         right: auto;

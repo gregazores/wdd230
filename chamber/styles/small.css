@@ -201,29 +201,29 @@
         /* *****DIRECTORY PAGE STYLING***** */
 
     /* *****grid view***** */
-    .business-directory-container {
+    .business-directory-section .business-directory-container {
         padding-left: 20px;
         padding-right: 20px;
     }
 
-    .directory-card {
+    .business-directory-section .directory-card {
         width: 100%;
 
     }
 
-    .business-directory-container .bottom-content {
+    .business-directory-section .business-directory-container .bottom-content {
         margin-left: 0px;
         margin-right: 0px;
     }
     
 
     /* *****list view***** */
-    .business-directory-container.grid-list .image-container,
-    .business-directory-container.grid-list .bottom-content {
+    .business-directory-section .business-directory-container.grid-list .image-container,
+    .business-directory-section .business-directory-container.grid-list .bottom-content {
         margin-left: 30px;
     }
 
-    .business-directory-container.grid-list .bottom-content p {
+    .business-directory-section .business-directory-container.grid-list .bottom-content p {
         width: 80%;
     }
 

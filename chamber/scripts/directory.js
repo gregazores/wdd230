@@ -11,7 +11,6 @@ fetch(requestURL)
   });
 
 function displayCompanies(company) {
-    console.log(1)
     let card = document.createElement('div'); 
     card.classList.add('directory-card')
     card.classList.add('common-card')

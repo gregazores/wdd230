@@ -1183,6 +1183,45 @@ footer .footer-contact {
     font-style: italic;
 }
 
+.contact-form .discover-divider {
+    grid-template-columns: 50% 50%;
+    background-color: #BFDBF7;
+}
+
+.contact-form .discover-divider .feature-column {
+    padding-left: 0;
+    border-left: 0;
+}
+
+.contact-form .discover-divider .demographic-column {
+    margin-left: 150px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#contact-us-form {
+
+}
+
+
+.contact-form .feature-column img {
+    width: 100%;
+    opacity: 1;
+    transition: none;
+}
+
+.contact-form .feature-column .animated {
+    box-shadow: none;
+    opacity: 1;
+}
+
+.contact-form .feature-column img:hover {
+    transform: none;
+    opacity: 100%;
+}
+
+*/
+
 
 
 

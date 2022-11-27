@@ -765,7 +765,8 @@ footer .footer-contact {
 .bottom-content h3,
 .join-page legend,
 .join-page .feature-wrapper > .common-header-three,
-.join-page .business-info > span {
+.join-page .business-info > span,
+.contact-page .item-description h3 {
     margin-top: 20px;
     color: #303030;
     font-weight: 700;
@@ -779,7 +780,9 @@ footer .footer-contact {
 .membership-description,
 .benefits li,
 .benefits li::marker,
-.views > p {
+.views > p,
+.contact-page .feature-column .item-description p,
+.contact-page .feature-column .item-description a {
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 1.9rem;
@@ -1124,6 +1127,64 @@ footer .footer-contact {
 .business-directory-section .business-directory-container.grid-list .bottom-content .business-phone {
     margin-top: 5px;
 }
+
+/* *****DIRECTORY PAGE STYLING***** */
+.contact-page .hero-div h2,
+.contact-page .hero-div .inner-content-container > p > a {
+    margin-top: 10px;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.contact-page .hero-div address,
+.contact-page .hero-div address a {
+    margin-top: 20px;
+    font-weight: 100;
+    font-size: 1rem;
+    color: #ffff;
+}
+
+.contact-page .hero-div address a:hover,
+.contact-page .hero-div .inner-content-container > p > a:hover {
+    color: #00bff3;
+    text-decoration: underline;
+}
+
+.contact-page .item-img-rounded {
+    display: contents;
+}
+
+.contact-page .item-img-rounded img {
+    width: 150px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px #30303092;
+}
+
+.contact-page .demographic-column .item-description {
+    width: 78%;
+    float: right;
+}
+
+.contact-page .item-description h3 {
+    margin-top: 0;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+}
+
+.contact-page .feature-column .item-description p {
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.contact-page .feature-column .item-description a {
+    color: #00bff3;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+
+
 
 
 

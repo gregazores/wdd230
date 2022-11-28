@@ -21,9 +21,10 @@ https://www.youtube.com/watch?v=D9RJ9_jZc2Q
 body {
     font-size: 22px;
     background-color: #ffff; 
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     display: flex;
+    max-width: 1920px;
     min-height: 100vh;
 }
 
@@ -334,12 +335,18 @@ footer .footer-contact {
     transform: translateY(-50%);
 }
 
+.home-page .page-sections.hero .hero-div .inner-content-container {
+    background-color: rgba(0, 0, 0, 0.701);
+}
+
 .page-sections.hero .hero-div .inner-content-container {
     width: fit-content;
     margin: 0 auto;
     padding: 100px 30px;
-    background-color: rgba(0, 0, 0, 0.701);
+    background-color: transparent;
 }
+
+
 
 .page-sections.hero .hero-div .inner-content-container:hover .generic-button-blue {
     transform: scale(1.1) translateY(-4px);
@@ -1131,6 +1138,9 @@ footer .footer-contact {
 }
 
 /* *****DIRECTORY PAGE STYLING***** */
+.contact-page .hero-div h2 {
+    text-transform: uppercase;
+}
 .contact-page .hero-div h2,
 .contact-page .hero-div .inner-content-container > p > a {
     margin-top: 10px;
@@ -1144,7 +1154,7 @@ footer .footer-contact {
 .contact-page .hero-div address a {
     margin-top: 20px;
     font-weight: 100;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #ffff;
 }
 

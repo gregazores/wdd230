@@ -766,7 +766,8 @@ footer .footer-contact {
 .join-page legend,
 .join-page .feature-wrapper > .common-header-three,
 .join-page .business-info > span,
-.contact-page .item-description h3 {
+.contact-page .item-description h3,
+#contact-us-form legend {
     margin-top: 20px;
     color: #303030;
     font-weight: 700;
@@ -814,7 +815,8 @@ footer .footer-contact {
     border: solid 1px #EF233C;
 }
 
-.join-page .personal-info .req span {
+.join-page .personal-info .req span,
+#contact-us-form .req span {
     color: #EF233C;
 }
 
@@ -1188,24 +1190,58 @@ footer .footer-contact {
     background-color: #BFDBF7;
 }
 
+.contact-form .discover-divider .demographic-column {
+    margin-left: 150px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.contact-form .contact-us-field{
+    margin: 0;
+    padding: 10px 40px;
+    border-color: #303030;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form .contact-us-field label {
+    margin-bottom: 25px;
+}
+
+.contact-form .contact-us-field label input,
+.contact-form .contact-us-field label textarea{
+    width: 99%;
+}
+
 .contact-form .discover-divider .feature-column {
     padding-left: 0;
     border-left: 0;
 }
 
-.contact-form .discover-divider .demographic-column {
-    margin-left: 150px;
-    margin-top: auto;
-    margin-bottom: auto;
+#contact-us-form .submit-button {
+    text-align: center;
 }
 
-#contact-us-form {
-
+#contact-us-form .generic-button-blue {
+    background-color: #303030;
+    width: revert;
+    color: #ffff;
 }
-
+/*disable the hover animation in contact form image */
+/*.contact-form .feature-column {
+} */
+.contact-form .feature-column {
+    position: relative;
+    overflow: hidden;
+}
 
 .contact-form .feature-column img {
     width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
     opacity: 1;
     transition: none;
 }
@@ -1216,11 +1252,11 @@ footer .footer-contact {
 }
 
 .contact-form .feature-column img:hover {
-    transform: none;
+    transform: translateY(-50%);
     opacity: 100%;
 }
 
-*/
+
 
 
 

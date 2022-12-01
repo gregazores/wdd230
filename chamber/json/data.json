@@ -8,7 +8,9 @@
             "phone": "(035) 421 0473",
             "website": "https://www.facebook.com/lantawdumaguete/",
             "views": 53,
-            "membership level": "gold"
+            "membershipLevel": "gold",
+            "tagline": "Nothing but great flavors only",
+            "email": "hello@lantaw.com"
         },
 
         {
@@ -19,7 +21,9 @@
             "phone": "(035) 225 3536",
             "website": "https://www.facebook.com/HayahayTreehouseBar/",
             "views": 79,
-            "membership level": "bronze"
+            "membershipLevel": "bronze",
+            "tagline": "Serving the freshest of seafood since 1988",
+            "email": "hello@hayahay.com"
         },
 
         {
@@ -30,7 +34,9 @@
             "phone": "(0918) 943 5989",
             "website": "https://www.facebook.com/SansRivalBistro/",
             "views": 47,
-            "membership level": "silver"
+            "membershipLevel": "silver",
+            "tagline": "Home to your all-time favorite Silvanas",
+            "email": "hello@sans-rival.com"
         },
 
         {
@@ -41,7 +47,9 @@
             "phone": "(035) 522 7304",
             "website": "https://www.facebook.com/forestcampresort/",
             "views": 56,
-            "membership level": "bronze"
+            "membershipLevel": "bronze",
+            "tagline": "The Premiere Nature Resort!!!",
+            "email": "hello@forest-camp.com"
         },
 
         {
@@ -52,7 +60,9 @@
             "phone": "(0917) 808 5131",
             "website": "https://www.facebook.com/BravoHotelph/",
             "views": 56,
-            "membership level": "silver"
+            "membershipLevel": "silver",
+            "tagline": "Come visit Bravo Hotels today!",
+            "email": "hello@bravo.com"
         },
 
         {
@@ -63,7 +73,9 @@
             "phone": "(0917) 722 1042",
             "website": "https://www.facebook.com/atmosphere.resorts/",
             "views": 123,
-            "membership level": "gold"
+            "membershipLevel": "gold",
+            "tagline": "A tropical boutique beach.",
+            "email": "hello@atmosphere.com"
         },
 
         {
@@ -74,7 +86,9 @@
             "phone": "(088) 521 2775",
             "website": "https://www.facebook.com/MissionarySistersOfStColumban",
             "views": 25,
-            "membership level": "non-profit"
+            "membershipLevel": "non-profit",
+            "tagline": "Our Place Community of Hope.",
+            "email": "hello@community.com"
         },
 
         {
@@ -85,7 +99,9 @@
             "phone": "(0939) 906 5668",
             "website": "https://www.facebook.com/gentlepawsphilippines/",
             "views": 32,
-            "membership level": "non-profit"
+            "membershipLevel": "non-profit",
+            "tagline": "The trusted grooming specialist.",
+            "email": "hello@gentle-paws.com"
         },
 
         {
@@ -96,7 +112,9 @@
             "phone": "(088) 545 1032",
             "website": "https://www.facebook.com/phcci/",
             "views": 83,
-            "membership level": "silver"
+            "membershipLevel": "silver",
+            "tagline": "Our goal is to serve as a key enabler.",
+            "email": "hello@phcci.com"
         }
     ]
 }

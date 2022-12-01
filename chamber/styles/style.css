@@ -595,10 +595,15 @@ footer .footer-contact {
 
 .spotlight-container .content-container h3,
 .spotlight-container .content-container p,
-.spotlight-container .content-container em {
+.spotlight-container .content-container em,
+.spotlight-container .content-container p a {
     color: #fff;
     font-weight: 700;
     text-shadow: 0px 1px 15px rgba(0,0,0,1);
+}
+
+.spotlight-container .content-container p a {
+    color: #00bff3;
 }
 
 .spotlight-container .content-container .bar-divider {

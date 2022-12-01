@@ -1,4 +1,5 @@
 const requestURL = 'json/data.json';
+const compList = []
 
 fetch(requestURL)
   .then(function (response) {
@@ -7,9 +8,47 @@ fetch(requestURL)
   .then(function (jsonObject) {
     //console.table(jsonObject);  // temporary checking for valid response and data parsing
     const companies = jsonObject['companies'];
-    companies.forEach(displayCompanies);
-  });
+    companies.forEach((company) => {
+      if (company.membershipLevel == 'gold' || company.membershipLevel == 'silver') {
+        compList.push(company)
+      }
+    });
+    changeSpotlight()
+});
 
+
+function changeSpotlight() {
+  const spotlights = document.querySelectorAll(".spotlight-home-page")
+  spotlights.forEach((spotlight) => {
+    const random = getRndInteger()
+    const comp = compList[random]
+    spotlight.childNodes[1].childNodes[1].lastElementChild.firstElementChild.innerHTML = `<h3 class="common-header-three">${comp.name}</h3>`
+    spotlight.childNodes[1].childNodes[1].childNodes[3].childNodes[3].childNodes[1].innerHTML = `<em>"${comp.tagline}"</em>`
+    spotlight.childNodes[1].childNodes[1].childNodes[3].childNodes[3].childNodes[5].innerHTML = `${comp.email}`
+    spotlight.childNodes[1].childNodes[1].childNodes[3].childNodes[3].childNodes[7].innerHTML = `+999-9999-9999 <a href="${comp.website}" target="blank">Website</a>`
+})
+
+}
+
+
+
+function getRndInteger() {
+  const max = compList.length
+  const min = 0
+  return Math.floor(Math.random() * (max - min) ) + min;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
 function displayCompanies(company) {
     let card = document.createElement('div'); 
     card.classList.add('directory-card')
@@ -54,3 +93,5 @@ listButton.addEventListener('click', () => {
   listButton.style.borderColor = '#303030'
   gridButton.style.borderColor = '#BFDBF7'
 })
+
+*/

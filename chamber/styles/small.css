@@ -227,6 +227,27 @@
         width: 80%;
     }
 
+    /* *****CONTACT PAGE STYLING***** */
+    .contact-page.main-content .page-sections.page-section-one.hero {
+        height: 65vh
+    }
+    .contact-page.main-content .page-sections.hero .hero-div .inner-content-container {
+        width: auto;
+    }
+
+    .contact-page.main-content .discover-divider .demographic-column {
+        padding-left: 0px;
+        padding-right: 0px;
+        margin: 0 40px;
+    }
+
+    .contact-page.main-content .discover-divider .feature-column {
+        padding: 50px 40px;
+    }
+
+    .contact-form .contact-us-field {
+        padding: 10px 20px; 
+    }
 
   }
 

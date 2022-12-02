@@ -375,8 +375,59 @@
         margin-top: 30px;
         margin-bottom: 20px;
     }
-    
 
+    /* *****CONTACT PAGE STYLING***** */
+    .contact-page.main-content .main-content-wrapper,
+    .contact-page.main-content .page-sections.page-section-two.contact-content {
+        margin-bottom: -1px;
+    }
+    .contact-page.main-content .page-sections.page-section-one.hero {
+        height: 50vh
+    }
+
+    .contact-page .item-img-rounded img {
+        width: 250px;
+    }
+
+    .contact-page .demographic-column .item-description {
+        margin-top: 50px;
+        width: 100%;
+        float: none;
+    }   
+
+    .contact-page .feature-column .item-description a,
+    .contact-page .hero-div address, .contact-page .hero-div address a,
+    .contact-page .item-description h3 {
+        word-wrap: break-word;
+    }
+
+    .contact-form {
+        margin: 0;
+    }
+
+    .contact-page.main-content .discover-divider {
+        margin: auto 0px;
+        
+    }
+
+    .contact-page.main-content .discover-divider .demographic-column {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .contact-page.main-content .discover-divider .feature-column {
+        background-color: rgb(225, 229, 242);
+        padding: 50px;
+    }
+
+    .contact-form .discover-divider .demographic-column {
+        margin-left: 0px;
+        padding: 50px;
+    }
+
+    .contact-form .discover-divider .feature-column {
+        display: none;
+    }
 
 }
 

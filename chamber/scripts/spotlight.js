@@ -13,6 +13,7 @@ fetch(requestURL)
         compList.push(company)
       }
     });
+    console.log(compList)
     changeSpotlight()
 });
 
@@ -22,10 +23,14 @@ function changeSpotlight() {
   spotlights.forEach((spotlight) => {
     const random = getRndInteger()
     const comp = compList[random]
-    spotlight.childNodes[1].childNodes[1].lastElementChild.firstElementChild.innerHTML = `<h3 class="common-header-three">${comp.name}</h3>`
-    spotlight.childNodes[1].childNodes[1].childNodes[3].childNodes[3].childNodes[1].innerHTML = `<em>"${comp.tagline}"</em>`
-    spotlight.childNodes[1].childNodes[1].childNodes[3].childNodes[3].childNodes[5].innerHTML = `${comp.email}`
-    spotlight.childNodes[1].childNodes[1].childNodes[3].childNodes[3].childNodes[7].innerHTML = `+999-9999-9999 <a href="${comp.website}" target="blank">Website</a>`
+    console.log(spotlight.childNodes)
+    spotlight.childNodes[1].style.backgroundImage = `url(\'${comp.image_url}\')`
+    spotlight.childNodes[1].childNodes[3].childNodes[1].childNodes[1].innerHTML = `${comp.name}`
+    spotlight.childNodes[1].childNodes[3].childNodes[1].childNodes[3].childNodes[1].innerHTML = `<em>"${comp.tagline}"</em>`
+    spotlight.childNodes[1].childNodes[3].childNodes[1].childNodes[3].childNodes[5].innerHTML = `${comp.email}`
+    spotlight.childNodes[1].childNodes[3].childNodes[1].childNodes[3].childNodes[7].innerHTML = `+999-9999-9999 <a href="${comp.website}" target="blank">Website</a>`
+    compList.splice(random, 1)
+    console.log(compList)
 })
 
 }

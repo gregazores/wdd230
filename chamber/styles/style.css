@@ -558,7 +558,7 @@ footer .footer-contact {
     background-size: cover;
 }
 
-.spotlight-container .absolute-overlay {
+.spotlight-home-page .spotlight .absolute-overlay {
     background-color: rgba(0, 0, 0, 0.70);
 }
 
@@ -570,14 +570,16 @@ footer .footer-contact {
     padding-bottom: 30px;
 }
 
-.spotlight-container {
+.spotlight-home-page .spotlight-container {
     padding: 30px;
-    box-shadow: 5px 5px 10px #3030306f;
+}
+
+.spotlight-home-page .spotlight {
+    box-shadow: 5px 5px 10px #3030308e;
 }
 
 .spotlight-container .content-container {
     position: relative;
-    
 }
 
 .spotlight-container .content-container .lower-part {
@@ -628,8 +630,6 @@ footer .footer-contact {
     background-image: url(../images/treehouse1.jpg);
     background-position: 30% 30%;
 }
-
-
 
 
 

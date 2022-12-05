@@ -1,0 +1,15 @@
+/* *****MOBILE VIEWS STYLING***** */ 
+
+/* ---Tablet View--- */
+
+@media screen and (max-width: 850px) {
+
+    /* *****UNIVERSAL STYLING***** */
+    * {
+        font-size: 26px;
+    }
+
+
+}
+
+

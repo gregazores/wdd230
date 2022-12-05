@@ -1,0 +1,120 @@
+{
+    "companies": [
+        {
+            "name": "Lantaw Native Restaurant",
+            "image_url": "images/directory/lantawpp500.png",
+            "category": "Bars and Restaurants",
+            "address": "EJ Blanco Drive, Ozamiz City",
+            "phone": "(035) 421 0473",
+            "website": "https://www.facebook.com/lantawdumaguete/",
+            "views": 53,
+            "membershipLevel": "gold",
+            "tagline": "Nothing but great flavors only",
+            "email": "hello@lantaw.com"
+        },
+
+        {
+            "name": "Hayahay Treehouse Bar",
+            "image_url": "images/directory/hayahaypp500.png",
+            "category": "Bars and Restaurants",
+            "address": "201 Flores Ave, Ozamiz City",
+            "phone": "(035) 225 3536",
+            "website": "https://www.facebook.com/HayahayTreehouseBar/",
+            "views": 79,
+            "membershipLevel": "bronze",
+            "tagline": "Serving the freshest of seafood since 1988",
+            "email": "hello@hayahay.com"
+        },
+
+        {
+            "name": "Sans Rival Bistro",
+            "image_url": "images/directory/sansrivalpp500.png",
+            "category": "Hotels and Restaurants",
+            "address": "San Jose St, Ozamiz City",
+            "phone": "(0918) 943 5989",
+            "website": "https://www.facebook.com/SansRivalBistro/",
+            "views": 47,
+            "membershipLevel": "silver",
+            "tagline": "Home to your all-time favorite Silvanas",
+            "email": "hello@sans-rival.com"
+        },
+
+        {
+            "name": "Forest Camp Resort",
+            "image_url": "images/directory/forestcamppp500.png",
+            "category": "Hotels and Resorts",
+            "address": "823 Taft St, Ozamiz City",
+            "phone": "(035) 522 7304",
+            "website": "https://www.facebook.com/forestcampresort/",
+            "views": 56,
+            "membershipLevel": "bronze",
+            "tagline": "The Premiere Nature Resort!!!",
+            "email": "hello@forest-camp.com"
+        },
+
+        {
+            "name": "Bravo Hotel and Resorts",
+            "image_url": "images/directory/bravopp500.png",
+            "category": "Hotels and Resorts",
+            "address": "9737 Pancil Looc, Ozamiz City",
+            "phone": "(0917) 808 5131",
+            "website": "https://www.facebook.com/BravoHotelph/",
+            "views": 56,
+            "membershipLevel": "silver",
+            "tagline": "Come visit Bravo Hotels today!",
+            "email": "hello@bravo.com"
+        },
+
+        {
+            "name": "Atmosphere Resorts & Spa",
+            "image_url": "images/directory/atmospherepp500.png",
+            "category": "Hotels and Resorts",
+            "address": "6217 Maayong Tubig, Ozamiz City",
+            "phone": "(0917) 722 1042",
+            "website": "https://www.facebook.com/atmosphere.resorts/",
+            "views": 123,
+            "membershipLevel": "gold",
+            "tagline": "A tropical boutique beach.",
+            "email": "hello@atmosphere.com"
+        },
+
+        {
+            "name": "Community of Hope Centre",
+            "image_url": "images/directory/communitypp500.png",
+            "category": "Non-profit Organization",
+            "address": "Columban Road, Ozamiz City",
+            "phone": "(088) 521 2775",
+            "website": "https://www.facebook.com/MissionarySistersOfStColumban",
+            "views": 25,
+            "membershipLevel": "non-profit",
+            "tagline": "Our Place Community of Hope.",
+            "email": "hello@community.com"
+        },
+
+        {
+            "name": "Gentle Paws Philippines",
+            "image_url": "images/directory/gentlepp500.png",
+            "category": "Non-profit Organization",
+            "address": "Don Anselmo, Ozamiz City",
+            "phone": "(0939) 906 5668",
+            "website": "https://www.facebook.com/gentlepawsphilippines/",
+            "views": 32,
+            "membershipLevel": "non-profit",
+            "tagline": "The trusted grooming specialist.",
+            "email": "hello@gentle-paws.com"
+        },
+
+        {
+            "name": "Perpetual Help Community Cooperative",
+            "image_url": "images/directory/phccipp500.png",
+            "category": "Multi-Purpose Cooperative",
+            "address": "National Highway, Ozamiz City",
+            "phone": "(088) 545 1032",
+            "website": "https://www.facebook.com/phcci/",
+            "views": 83,
+            "membershipLevel": "silver",
+            "tagline": "Our goal is to serve as a key enabler.",
+            "email": "hello@phcci.com"
+        }
+    ]
+}

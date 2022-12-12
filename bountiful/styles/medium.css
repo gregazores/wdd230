@@ -9,6 +9,125 @@
         font-size: 26px;
     }
 
+    /* header styles */
+
+    /* Navigation on Tablet */
+    .site-logo h2 a, footer .footer-left h2 a, 
+    .footer-right fieldset legend {
+        font-size: 1.5rem;
+    }
+
+    #open-icon {
+        display: inline-block;
+        float: right;
+        margin-right: 30px;
+    }
+
+    .page-navigation {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 500;
+        float: none;
+        width: 100%;
+        height: -100%;
+        background-color: #342628;
+        text-align: center;
+    }
+
+    .page-navigation.active {
+        display: block;
+    }
+
+    .page-navigation ul {
+        display: block;
+        margin-top: 50px;
+    }
+
+    .page-navigation ul li {
+        border-left: 0px;
+        padding: 6px 0px;
+        transition: background-color .3s linear;
+    }
+
+    #open-icon,
+    #close-icon button {
+        font-weight: 700;
+        letter-spacing: 1px;
+        line-height: 1rem;
+        padding: 5px 10px 8px 10px;
+    }
+
+    #close-icon {
+        position: absolute;
+        display: inline-block;
+        right: 30px;
+        top: 30px;
+    }
+
+    /* Generic Footer Styling */
+
+    .footer-container {
+        display: flex;
+        padding: 40px 30px;
+    }
+
+    .footer-left,
+    .footer-right {
+        width: 50%;
+    }
+
+    .footer-right {
+        padding-left: 30px;
+    }
+
+    #subsForm2 fieldset input {
+        width: 93%;
+    }
+
+
+    /* *****HOME PAGE STYLING***** */
+
+    .home-page .hero-section .hero-section-wrapper {
+        height: 80vh;
+        background-color: red;
+    }
+
+    .home-page .hero-section .hero-content-container h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 3rem;
+        color: #F7F4EF;
+    }
+
+    .home-page .hero-section .hero-content-container h2 {
+        margin-top: 20px;
+    }
+
+    #subsForm input {
+        display: block;
+        margin: 0px auto 15px auto;
+    }
+
+    .hero-call-to-action {
+        padding: 30px 40px;
+        display: block;
+    }
+
+    .hero-call-left {
+        display: none;
+    }
+
+    .hero-call-to-action .hero-call-right p {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+
+
+
+
+
 
 }
 

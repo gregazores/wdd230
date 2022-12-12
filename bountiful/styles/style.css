@@ -58,19 +58,23 @@ header {
 }
 
 
-.site-logo h2 a {
+.site-logo h2 a,
+footer .footer-left h2 a,
+.footer-right fieldset legend {
+    font-family: 'Playfair Display', serif;  
+    font-weight: 700;
     font-size: 2rem;
     color: #F7F4EF;
 }
 
 .page-navigation {
+    position: relative;
     float: right;
     width: 50%;
     height: 100%;
 }
 
 .page-navigation ul {
-    position: relative;
     justify-content: flex-end;
     padding: 0;
     width: 100%;
@@ -84,7 +88,6 @@ header {
 
 .page-navigation ul li:hover {
     background-color: #fea900;   
-    justify-self: end;
 }
 
 .page-navigation ul li a {
@@ -92,8 +95,8 @@ header {
     color: #F7F4EF;
 }
 
+#open-icon,
 #close-icon {
-    position: absolute;
     display: none;
 }
 
@@ -107,6 +110,39 @@ header {
     background-color: rgba(0, 0, 0, 0.50);
 }
 
+.newsletter-form fieldset {
+    border: 0;
+}
+
+.newsletter-form fieldset legend {
+    color: #F7F4EF;
+}
+
+.newsletter-form fieldset input[type=text],
+.newsletter-form fieldset input[type=email] {
+    border: 2px solid #788402;
+    border-radius: 10px;
+    padding: 8px 12px;
+    background-color: #34262898;
+    color: #F7F4EF;
+    font-weight: 300;
+}
+
+.newsletter-form fieldset input:focus {
+    outline:none
+}
+
+.newsletter-form fieldset input::placeholder {
+    color: #f7f4ef91;
+}
+
+.newsletter-form fieldset input[type=submit] {
+    border: 0;
+    padding: 8px 15px;
+    font-size: 1rem;
+}
+
+
 .generic-button1 {
     background-color: #342628;
     color: #F7F4EF;
@@ -114,13 +150,117 @@ header {
     font-size: 1.5rem;
     display: inline-block;
     border-radius: 100px;
-    transition: all .5s linear;
+    transition: background-color .5s linear, color .5s linear;
 }
 
 .generic-button1:hover {
     background-color: #F7F4EF;
     color: #342628;
 }
+
+
+/* Generic Footer Styling */
+footer {
+    background-color: #788402;
+}
+
+.footer-container {
+    display: flex;
+    padding: 40px 50px;
+}
+
+.footer-left {
+    width: 60%;
+}
+
+.footer-left > h3 {
+    margin-top: 10px;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    color: #F7F4EF;
+    font-size: 1.1rem;
+    font-weight: 100;
+}
+
+.footer-left ul {
+    padding-left: 0px;
+    margin-top: 5px;
+    flex-direction: column;
+}
+
+.footer-left ul li {
+    color: #F7F4EF;
+    font-weight: 100;
+}
+
+.footer-left .footer-socials {
+    flex-direction: row;
+    margin-top: 15px;
+    padding-bottom: 30px;
+}
+
+.footer-left .footer-socials > li {
+    margin-right: 15px;
+}
+
+.footer-left .footer-socials > li img {
+    border: 2px solid #342628;
+    background-color: #342628;
+    width: 25px;
+    border-radius: 8px;
+    padding: 3px;
+    transition: background-color .3s linear, border .3s linear;
+}
+
+.footer-left .footer-socials > li:hover img {
+    border: 2px solid #F7F4EF;
+    background-color: transparent;
+}
+
+.footer-right {
+    width: 40%;
+}
+
+#subsForm2 fieldset {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-right fieldset legend {
+    margin-bottom: 18px;
+}
+
+#subsForm2.newsletter-form fieldset input[type=text],
+#subsForm2.newsletter-form fieldset input[type=email] {
+    margin-bottom: 8px;
+    background-color: #f7f4ef77;
+    font-weight: 500;
+    transition: background-color .5s linear;
+}
+
+#subsForm2.newsletter-form fieldset input[type=text]:focus,
+#subsForm2.newsletter-form fieldset input[type=email]:focus{
+    background-color: #34262865;
+    color: #fff;
+    
+}
+
+#subsForm2.newsletter-form fieldset .generic-button1 {
+    background-color: #FEAA00;
+}
+
+#subsForm2.newsletter-form fieldset .generic-button1:hover {
+    background-color: #F7F4EF;
+}
+
+#footer-copyright {
+    background-color: #342628;
+    color: #F7F4EF;
+    font-size: .8rem;
+    text-align: center;
+    padding: 10px ;
+}
+
+
 
 
 /* *****HOME PAGE STYLING***** */
@@ -200,6 +340,8 @@ header {
     width: 80%;
     transform: translate(-50%, -50%);
     background-color: #778402d7;
+    padding-top: 20px;
+    padding-bottom: 30px;
 }
 
 .home-page .hero-section .hero-content-container h1 {
@@ -230,6 +372,14 @@ header {
     text-decoration: underline;
 }
 
+#subsForm {
+    margin-top: 20px;
+}
+
+#subsForm legend {
+    margin-bottom: 5px;
+}
+
 .hero-call-to-action {
     margin-top: 30px;
     padding: 20px 40px;
@@ -249,7 +399,4 @@ header {
     color: #F7F4EF;
 }
 
-.hero-call-to-action .hero-call-right .generic-button1 {
-    margin-top: 10px;
-}
 

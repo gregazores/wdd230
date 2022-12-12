@@ -21,6 +21,7 @@
                 <div class="site-logo">
                     <h2><a href="#">BOUNTIFUL FOODS</a></h2>
                 </div>
+                <button id="open-icon" type="button" onclick=addActive()>☰</button>
                 <nav class="page-navigation" id="responsive-nav">
                     <ul>
                         <li><a href="#">Home</a></li>
@@ -37,33 +38,33 @@
                         <div class="hero-section-wrapper">
                             <div class="hero-image-container">
                                 <picture class="responsive-image">
-                                    <source media="(max-width:500px)" srcset="images/home-hero1sm.png">
-                                    <source media="(max-width:850px)" srcset="images/home-hero1med.png">
+                                    <source media="(max-width:500px)" srcset="images/home-hero1lrg.png.png">
+                                    <source media="(max-width:850px)" srcset="images/home-hero1lrg.png.png">
                                     <img src="images/home-hero1lrg.png" alt="organic fruit and drink image">
                                 </picture>
                                 <picture class="responsive-image">
-                                    <source media="(max-width:500px)" srcset="images/home-hero2sm.png">
-                                    <source media="(max-width:850px)" srcset="images/home-hero2med.png">
+                                    <source media="(max-width:500px)" srcset="images/home-hero2lrg.png">
+                                    <source media="(max-width:850px)" srcset="images/home-hero2lrg.png">
                                     <img src="images/home-hero2lrg.png" alt="organic fruit and drink image">
                                 </picture>
                                 <picture class="responsive-image">
-                                    <source media="(max-width:500px)" srcset="images/home-hero3sm.png">
-                                    <source media="(max-width:850px)" srcset="images/home-hero3med.png">
+                                    <source media="(max-width:500px)" srcset="images/home-hero3lrg.png">
+                                    <source media="(max-width:850px)" srcset="images/home-hero3lrg.png">
                                     <img src="images/home-hero3lrg.png" alt="organic fruit and drink image">
                                 </picture>
                                 <picture class="responsive-image">
-                                    <source media="(max-width:500px)" srcset="images/home-hero4sm.png">
-                                    <source media="(max-width:850px)" srcset="images/home-hero4med.png">
+                                    <source media="(max-width:500px)" srcset="images/home-hero4lrg.png">
+                                    <source media="(max-width:850px)" srcset="images/home-hero4lrg.png">
                                     <img src="images/home-hero4lrg.png" alt="organic fruit and drink image">
                                 </picture>
                                 <picture class="responsive-image">
-                                    <source media="(max-width:500px)" srcset="images/home-hero5sm.png">
-                                    <source media="(max-width:850px)" srcset="images/home-hero5med.png">
+                                    <source media="(max-width:500px)" srcset="images/home-hero5lrg.png.png">
+                                    <source media="(max-width:850px)" srcset="images/home-hero5lrg.png.png">
                                     <img src="images/home-hero5lrg.png" alt="organic fruit and drink image">
                                 </picture>
                                 <picture class="responsive-image">
-                                    <source media="(max-width:500px)" srcset="images/home-hero6sm.png">
-                                    <source media="(max-width:850px)" srcset="images/home-hero6med.png">
+                                    <source media="(max-width:500px)" srcset="images/home-hero6lrg.png">
+                                    <source media="(max-width:850px)" srcset="images/home-hero6lrg.png">
                                     <img src="images/home-hero6lrg.png" alt="organic fruit and drink image">
                                 </picture>
                             </div>
@@ -71,7 +72,7 @@
                             <div class="hero-content-container">
                                 <h1>BOUNTIFUL FOODS</h1>
                                 <h2>HEALTHY EATING <span>|</span> ORGANIC BOUNTY <span>|</span> CONVENIENCE</h2>
-                                <form id="subsForm" action="thankyou.html" method="get">
+                                <form id="subsForm" class="newsletter-form" action="thankyou.html" method="get">
                                     <fieldset>
                                         <legend>SUBSCRIBE TO OUR DAILY NEWSLETTER TODAY!!</legend>
                                         <input type="text" name="fname" placeholder="First Name" required>
@@ -100,25 +101,42 @@
 
             <footer class="page-footer home-footer">
                 <div class="footer-container">
-                    <a class="footer-logo-wrapper" href="index.html">
-                        <h2><a href="#">BOUNTIFUL FOODS</a></h2>
+                    <div class="footer-left">
                         <h2>
-                            Purok 1 Sinuza,<br>
-                            Ozamiz City Misamis Occidental 7200<br>
-                            Philippines
+                            <a href="#">BOUNTIFUL FOODS</a>
                         </h2>
-                    </a>
-                    <div class="footer-contact">
-                        <h2>Contact Information</h2>
+                        <h3>Carlsbad, California</h3>
                         <ul>
-                            <li>&#128231; info@ozamizchambercommerce.com</li>
-                            <li>&#128222; +63 965 7748476</li>
-                            <li><a href="https://www.google.com/maps/place/Ozamiz+City,+Misamis+Occidental/@8.1455132,123.6180458,11z/data=!3m1!4b1!4m5!3m4!1s0x3255ac621ea87229:0x29a34c1911c5bf46!8m2!3d8.162411!4d123.7741195" target="blank">📍 Location Map</a></li>
+                            <li>📧 info@bountiful.com</li>
+                            <li>📞 +63 965 7748476</li>
                         </ul>
+
+                        <ul class="footer-socials">
+                            <li><a href="https://www.facebook.com/"><img src="images/facebookwhtsmall.png" alt="social media icons" width="30"></a></li>
+                            <li><a href="https://twitter.com/i/flow/login"><img src="images/twitterwhtsmall.png" alt="social media icons" width="30"></a></li> 
+                            <li><a href="https://www.youtube.com/"><img src="images/youtubewhtsmall.png" alt="social media icons" width="30"></a></li>
+                            <li><a href="https://www.instagram.com/"><img src="images/instawhtsmall.png" alt="social media icons" width="30"></a></li>
+                        </ul>
+
                     </div>
+                    <div class="footer-right">
+                        <form id="subsForm2" class="newsletter-form" action="thankyou.html" method="get">
+                            <fieldset>
+                                <legend>NEWSLETTER</legend>
+                                <input type="text" name="fname" placeholder="First Name" required>
+                                <input type="email" name="email" placeholder="Email Address" required>
+                                <input class="generic-button1" type="submit" value="SUBSCRIBE">
+                            </fieldset>
+
+                        </form>
+
+                    </div>
+
+
                 </div>
+
                 <div class="footer-meta-info">
-                    <a href="../"><p id="footer-copyright"></p></a>
+                    <a href="../"><p id="footer-copyright">Hi </p></a>
                 </div>
 
             </footer>

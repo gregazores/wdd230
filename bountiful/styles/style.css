@@ -252,12 +252,19 @@ footer {
     background-color: #F7F4EF;
 }
 
-#footer-copyright {
+.footer-meta-info {
+    padding: 10px ;
+    text-align: center;
     background-color: #342628;
+}
+
+#footer-copyright,
+#openweathermap p {
+    margin: 0;
     color: #F7F4EF;
     font-size: .8rem;
-    text-align: center;
-    padding: 10px ;
+    
+    
 }
 
 
@@ -289,7 +296,8 @@ footer {
     opacity: 0; 
 }
 
-.home-page .hero-section .hero-image-container picture img {
+.home-page .hero-section .hero-image-container picture img,
+.home-page .blog-section .hero-image-container picture img {
     width: 100%;
 }
 
@@ -399,4 +407,197 @@ footer {
     color: #F7F4EF;
 }
 
+/* Home Page Blog Section */
+.blog-wrapper.hero-section-wrapper {
+    z-index: -100;
+}
+.home-page .blog-section.hero-section .hero-image-container picture {
+    animation: none;
+    filter: brightness(70%);
+}
 
+.home-page .blog-section.hero-section .hero-content-container {
+    width: 90%;
+    background-color: transparent;
+}
+
+.blog-section.hero-section .hero-content-container h2 {
+    font-family: 'Playfair Display';
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 4.5rem;
+    color: #F7F4EF;
+}
+
+.blog-section.hero-section .hero-content-container p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 300;
+    color: #F7F4EF;
+}
+
+.blog-section .blog-articles.hero-call-to-action {
+    background-color: transparent;
+    display: block;
+    margin-top: -90px;
+    z-index: 1000;
+}
+
+.blog-section .blog-articles.hero-call-to-action .article-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-section .blog-articles.hero-call-to-action .article-container article {
+    width: 22%;
+    text-align: center;
+}
+
+.blog-section .blog-articles.hero-call-to-action .article-container article h3 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.blog-section .article-container .blog-beaches > p > a {
+    font-weight: 700;
+}
+
+.blog-section .blog-articles.hero-call-to-action .article-container article img {
+    width: 100%;
+    filter: brightness(85%);
+}
+
+.featured-blogs.blog-articles.hero-call-to-action {
+    margin-top: 0px;
+    padding: 20px 0;
+}
+
+.featured-blogs .article-container .blog-beaches {
+    position: relative;
+}
+
+.featured-blogs .article-container .blog-beaches .featured-article-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%, -50%);
+}
+
+.blog-section .featured-blogs.blog-articles.hero-call-to-action .article-container article {
+    width: 47%;
+}
+
+.blog-section .featured-blogs.blog-articles.hero-call-to-action .article-container article img {
+    filter: brightness(60%);
+}
+
+.blog-section .featured-blogs .article-container .blog-beaches .featured-article-content h3 {
+    font-size: 1.8rem;
+    line-height: 2rem;
+}
+
+.featured-blogs .article-container .blog-beaches .featured-article-content p,
+.featured-blogs .article-container .blog-beaches .featured-article-content a {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 300;
+}
+
+.featured-blogs .article-container .blog-beaches .featured-article-content h3,
+.featured-blogs .article-container .blog-beaches .featured-article-content p,
+.featured-blogs .article-container .blog-beaches .featured-article-content a {
+    color: #F7F4EF;
+}
+
+.featured-blogs .article-container .blog-beaches .featured-article-content a {
+    font-weight: 400;
+}
+
+/* Home Page Weather Section */
+.weather-section.generic-section {
+    background-color: #F7F4EF;
+}
+
+.weather-section.generic-section .city-name {
+    padding: 20px 30px;
+}
+
+.weather-section.generic-section .city-name h2 {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.weather-section.generic-section .city-name {
+    color: #342628;
+}
+.current-weather-info {
+    display: flex;
+    justify-content: center;
+}
+
+.current-weather-info .current-contents {
+    padding-top: 20px;
+    width: 31%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.weather-image img {
+    display: inline-block;
+    margin: 0px auto;
+    width: 60%;
+}
+
+.current-weather-info .current-contents.wind-humid h3 {
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#weather-description {
+    text-transform: capitalize;
+}
+
+.current-weather-info .current-contents p {
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-size: 1.5rem;
+    margin: 5px 0;
+}
+
+.current-weather-info .temps.current-contents h3 {
+    position: relative;
+    font-size: 12rem;
+    margin-top: 40px;
+}
+
+.current-weather-info .temps.current-contents h3 span {
+    float: right;
+    font-size: 3rem;
+    margin-left: -70px;
+}
+
+.weather-section.generic-section .section-wrapper .three-day-forecast {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.weather-section.generic-section .three-day-forecast .day-forecast {
+    padding: 10px 0;
+    width: 29%;
+    align-items: center;
+    background-color: #342628;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.weather-section.generic-section .three-day-forecast .day-forecast p {
+    color: #F7F4EF;
+    font-size: 1.8rem;
+    letter-spacing: .05rem;
+}

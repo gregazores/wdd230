@@ -111,7 +111,6 @@ function forecastWeather(weatherList) {
     
 }
 
-console.log(d)
 
 
 

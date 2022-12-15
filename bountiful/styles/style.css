@@ -601,3 +601,93 @@ footer {
     font-size: 1.8rem;
     letter-spacing: .05rem;
 }
+
+
+
+/* *****FRESH PAGE STYLING***** */
+
+/* fresh page form part */
+.fresh-page.home-page .hero-section .hero-section-wrapper {
+    height: 30vh;
+}
+
+.create-specialty-drink.hero-call-to-action {
+    background-color: transparent;
+}
+
+.fresh-page .create-specialty-drink.hero-call-to-action {
+    grid-template-columns: 55% 40%;
+    column-gap: 5%;
+    padding: 20px 0;
+    align-items: start;
+
+}
+
+/* form side left */
+
+.fresh-page .create-specialty-drink.hero-call-to-action .hero-call-left {
+    background-color: #F7F4EF;
+}
+
+/* form side right */
+
+
+
+.fresh-page .create-specialty-drink.hero-call-to-action .hero-call-right {
+    text-align: left;
+    width: 100%;
+}
+
+.create-specialty-drink-form {
+    width: 100%;
+}
+
+.create-specialty-drink-form label,
+.create-specialty-drink-form label input,
+.create-specialty-drink-form label select,
+.create-specialty-drink-form label textarea {
+    display: block;
+}
+
+.create-specialty-drink-form label input,
+.create-specialty-drink-form label select,
+.create-specialty-drink-form label textarea {
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+ .create-specialty-drink-form .submit-button input {
+    width: auto;
+    border: 0;
+}
+
+.create-specialty-drink-form label input[type=text],
+.create-specialty-drink-form label input[type=tel],
+.create-specialty-drink-form label input[type=email],
+.create-specialty-drink-form label select,
+.create-specialty-drink-form label textarea {
+    font-weight: 500;
+    border: 2px solid #342628;
+    border-radius: 10px;
+    padding: 8px 12px;
+    background-color: #ffff;
+    color: #342628;
+    transition: background-color .5s linear;
+}
+
+.create-specialty-drink-form label input:focus {
+    outline:none
+}
+
+.create-specialty-drink-form label input::placeholder {
+    color: #342628;
+}
+
+.req input,
+.req select {
+    border-color: red !important;
+}
+
+.req-star {
+    color: red;
+}

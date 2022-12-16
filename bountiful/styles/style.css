@@ -698,6 +698,12 @@ footer {
     margin: 5px 0;
 }
 
+.order-header h2,
+.order-confirmation .customer-info .full-name,
+.order-confirmation .order-details .date {
+    text-transform: capitalize;
+}
+
 
 
 /* form side right */

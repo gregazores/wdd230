@@ -74,7 +74,14 @@
 
                         <div class="create-specialty-drink hero-call-to-action">
                             <div class="hero-call-left">
-                                <div class="order-confirmation">
+                                <div id="confirmation-order" class="order-confirmation">
+                                    <div class="order-header">
+                                        <h2>Hi, There!</h2>
+                                        <p><em>You have not placed a new order yet!</em></p>
+                                        <p><em>Fill out the form in order to create a specialized drink</em></p>
+                                    </div>
+
+                                <!--
                                     <div class="order-header">
                                         <h2>Hi, Greg</h2>
                                         <p><em>Thank you for your order</em></p>
@@ -112,33 +119,33 @@
                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti distinctio aperiam adipisci consectetur, eum voluptates rem beatae quae soluta ab iusto atque blanditiis reprehenderit nisi similique ex, id recusandae totam!</p>
                                 
                                     </div>
-
+                                -->
                                 </div>
 
 
                             </div>
                             <div class="hero-call-right">
-                                <form action="" class="create-specialty-drink-form" onsubmit="createOrder()">
-                                    <label class="req">First Name <span class="req-star">*</span><input type="text" name="fname" placeholder="First Name" required></label>
-                                    <label class="req">Last Name <span class="req-star">*</span><input type="text" name="lname" placeholder="Last Name" required></label>
-                                    <label class="req">Email <span class="req-star">*</span><input type="email" name="email" placeholder="email@domain.com" required></label>
-                                    <label class="req">Phone <span class="req-star">*</span><input type="tel" name="phone" placeholder="09657748476" required></label>
-                                    <label class="req">Fruit 1 <span class="req-star">*</span>
-                                        <select name="fruits" class="select-fruits" required>
+                                <form action="#confirmation-order" method="get" class="create-specialty-drink-form" onsubmit="createOrder(event)">
+                                    <label id="fname" class="req">First Name <span class="req-star">*</span><input type="text" name="fname" placeholder="First Name" value="greg" required></label>
+                                    <label id="lname" class="req">Last Name <span class="req-star">*</span><input type="text" name="lname" placeholder="Last Name" value="azores" required></label>
+                                    <label id="email" class="req">Email <span class="req-star">*</span><input type="email" name="email" placeholder="email@domain.com" value="greg@hessom.com" required></label>
+                                    <label id="phone-num" class="req">Phone <span class="req-star">*</span><input type="tel" name="phone" placeholder="09657748476" value="09657748476" required></label>
+                                    <label id="fruit1" class="req">Fruit 1 <span class="req-star">*</span>
+                                        <select name="fruit1" class="select-fruits" required>
                                             <option value="">Please Select</option>
                                         </select>
                                     </label>
-                                    <label class="req">Fruits 2 <span class="req-star">*</span>
-                                        <select name="fruits" class="select-fruits" required>
+                                    <label id="fruit2" class="req">Fruits 2 <span class="req-star">*</span>
+                                        <select name="fruit2" class="select-fruits" required>
                                             <option value="">Please Select</option>
                                         </select>
                                     </label>
-                                    <label class="req">Fruit 3 <span class="req-star">*</span>
-                                        <select name="fruits" class="select-fruits" required>
+                                    <label id="fruit3" class="req">Fruit 3 <span class="req-star">*</span>
+                                        <select name="fruit3" class="select-fruits" required>
                                             <option value="">Please Select</option>
                                         </select>
                                     </label>
-                                    <label class="business-info"><span>Add Special Instructions</span><textarea class="text-box" name="tbox" cols="6" rows="5"></textarea></label>
+                                    <label id="msg" class="business-info"><span>Add Special Instructions</span><textarea class="text-box" name="tbox" cols="6" rows="5"></textarea></label>
 
                                     <label id="create-drink-button" class="submit-button"><input class="generic-button1" type="submit" value="ORDER NOW!"></label>
                                 </form>

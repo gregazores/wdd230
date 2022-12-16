@@ -110,6 +110,30 @@ footer .footer-left h2 a,
     background-color: rgba(0, 0, 0, 0.50);
 }
 
+.titled-divider {
+    margin: 30px 0;
+}
+
+.titled-divider h2 {
+    font-size: 3rem;
+    line-height: 3rem;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+
+.titled-divider h2:after {
+    content: '';
+    border-top: 6px solid;
+    margin: 0 0px 0 20px;
+    flex: 1 0 20px;
+    color: #FEAA00;
+}
+
 .newsletter-form fieldset {
     border: 0;
 }
@@ -623,15 +647,60 @@ footer {
 
 }
 
-/* form side left */
+/* orders side left */
 
 .fresh-page .create-specialty-drink.hero-call-to-action .hero-call-left {
     background-color: #F7F4EF;
+    padding: 30px;
 }
 
+.customer-info,
+.order-details {
+    margin-top: 30px;
+}
+
+.order-confirmation .order-header h2 {
+    font-size: 3rem;
+    line-height: 4rem;
+}
+
+.order-confirmation h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    border-bottom: 2px dashed #34262889;
+    line-height: 3rem;
+}
+
+.order-confirmation h3 {
+    font-family: "Open Sans", Helvetica, sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.order-confirmation p {
+    margin: 5px 0;
+}
+
+.order-confirmation .order-details h2 {
+    margin-bottom: 0px;
+}
+
+.order-confirmation .order-details .date{
+    margin-bottom: 20px;
+}
+
+.order-confirmation .order-details ul {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.order-confirmation .order-details ul li {
+    margin: 5px 0;
+}
+
+
+
 /* form side right */
-
-
 
 .fresh-page .create-specialty-drink.hero-call-to-action .hero-call-right {
     text-align: left;
@@ -680,7 +749,7 @@ footer {
 }
 
 .create-specialty-drink-form label input::placeholder {
-    color: #342628;
+    color: #3426286a;
 }
 
 .req input,

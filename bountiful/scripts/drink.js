@@ -20,7 +20,9 @@ async function apiFetch() {
 
   apiFetch();
 
-  function displayResults(datas) {
+  
+
+function displayResults(datas) {
     const selectElements = document.querySelectorAll('.select-fruits')
     //create fruit datas
     datas.forEach( (data) => {
@@ -106,7 +108,7 @@ function createOrder(event) {
         </div>
         <div class="order-details">
         <h2>Order Details</h2>
-        <p class="date"><em>December 15, 2022</em></p>
+        <p class="date"><em>${fulldateUK}</em></p>
         <div class="selected-fruits">
             <h3>Selected Fruits</h3>
             <ul>

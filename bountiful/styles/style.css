@@ -431,6 +431,69 @@ footer {
     color: #F7F4EF;
 }
 
+/* Home Page Order History Section */
+.order-history-section {
+    background-color: #F7F4EF;
+    padding: 30px;
+}
+
+.order-history-section .order-history-main-container .order-header h2 {
+    font-size: 3rem;
+    line-height: 4rem;
+    border-bottom: 2px dashed #34262889;
+    margin-bottom: 20px;
+}
+
+.order-history-section .order-history-main-container .order-header p {
+    margin: 5px 0;
+}
+
+.order-history-section .order-flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.order-history-section .order-flex-container .customer-orders {
+    width: 28%;
+    padding: 20px 0 20px 30px;
+    background-color: #fea90075;
+    margin-top: 30px;
+}
+
+.order-history-section .order-flex-container .customer-orders .order-details {
+    margin: 0px;
+}
+
+
+.order-history-section .order-flex-container .customer-orders h2 {
+    font-size: 1.8rem;
+    margin: 0px;
+    margin-right: 30px;
+    line-height: 3rem;
+    letter-spacing: 3px;
+    border-bottom: 2px dashed #34262889;
+}
+
+.order-history-section .order-flex-container .customer-orders h3 {
+    font-family: "Open Sans", Helvetica, sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.order-history-section .order-flex-container .customer-orders .date {
+    margin-top: 5px;
+}
+
+.order-history-section .order-flex-container .customer-orders ul {
+    display: block;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
+
+
 /* Home Page Blog Section */
 .blog-wrapper.hero-section-wrapper {
     z-index: -100;

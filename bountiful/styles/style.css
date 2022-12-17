@@ -191,6 +191,7 @@ footer {
 .footer-container {
     display: flex;
     padding: 40px 50px;
+    flex-wrap: wrap;
 }
 
 .footer-left {

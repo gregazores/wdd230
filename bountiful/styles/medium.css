@@ -144,7 +144,10 @@
     .current-weather-info .current-contents {
         width: 45%;
         margin-bottom: 20px;
+    }
 
+    .current-weather-info .temps.current-contents h3 {
+        font-size:9rem
     }
 
     .weather-section.generic-section .three-day-forecast .day-forecast .forecast-desc {

@@ -721,6 +721,9 @@ footer {
 
 
 /* *****FRESH PAGE STYLING***** */
+.fresh-page {
+    margin-bottom: 30px;
+}
 
 /* fresh page form part */
 .fresh-page.home-page .hero-section .hero-section-wrapper {
@@ -744,6 +747,7 @@ footer {
 .fresh-page .create-specialty-drink.hero-call-to-action .hero-call-left {
     background-color: #F7F4EF;
     padding: 30px;
+    min-height: 90%;
 }
 
 .customer-info,
@@ -799,7 +803,6 @@ footer {
 
 
 /* form side right */
-
 .fresh-page .create-specialty-drink.hero-call-to-action .hero-call-right {
     text-align: left;
     width: 100%;
@@ -857,4 +860,58 @@ footer {
 
 .req-star {
     color: red;
+}
+
+
+/* *****ABOUT PAGE STYLING***** */
+.about-us.fresh-page {
+    margin-bottom: 0;
+}
+
+
+.about-us.fresh-page .create-specialty-drink.hero-call-to-action {
+    overflow: hidden;
+}
+
+.about-us.fresh-page .create-specialty-drink.hero-call-to-action p {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin-bottom: 10px;
+
+}
+
+/* side right */
+
+.about-us.fresh-page.fresh-page .create-specialty-drink.hero-call-to-action .hero-call-right {
+    background-color: #778402;
+    padding: 30px;
+}
+
+
+.about-us.fresh-page.fresh-page .create-specialty-drink.hero-call-to-action .hero-call-right .footer-left {
+    width: 100%;
+}
+
+.about-us.fresh-page.fresh-page .create-specialty-drink.hero-call-to-action .hero-call-right .footer-left h2{
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #F7F4EF;
+}
+
+.about-us.fresh-page.fresh-page .create-specialty-drink.hero-call-to-action .hero-call-right .footer-left h3,
+.about-us.fresh-page.fresh-page .create-specialty-drink.hero-call-to-action .hero-call-right .footer-left ul li {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin-bottom: 10px;
+}
+
+.fresh-page.home-page .map-section.blog-section.hero-section .hero-section-wrapper {
+    margin-top: 30px;
+    height: 50vh;
+}
+
+.fresh-page.home-page .map-section.blog-section.hero-section .hero-image-container picture {
+    filter: brightness(100%);
 }

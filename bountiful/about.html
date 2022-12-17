@@ -8,7 +8,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="description" content="This is the website for BOUNTIFUL FOODS. Project for WDD230">
-        <title>BOUNTIFUL | FRESH</title>
+        <title>BOUNTIFUL | ABOUT</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles/style.css">
         <link rel="stylesheet" href="styles/large.css">
@@ -32,7 +32,7 @@
                 </nav>
             </header>
             
-            <main class="fresh-page home-page main-container">
+            <main class="about-us fresh-page home-page main-container">
                 <div class="main-wrapper">
                    
                     <section class="blog-section hero-section">
@@ -46,7 +46,7 @@
                             </div>
 
                             <div class="hero-content-container">
-                                <h2>Welcome to our <br> Fresh Page</h2>
+                                <h2>About Bountiful Foods</h2>
                                 <!--
                                 <p>Bountiful Foods is small business specializing in organic. <br> We sell fruits and produce directly from the farmers in the area</p> -->
                             </div>
@@ -60,100 +60,71 @@
                                 <img width="250" src="images/temp.webp" alt="special drink">
                             </div>
                             <div class="hero-call-right">
-                                <p>You can check out the total number of specialty drinks you have submitted by clicking the button below.</p>
-                                <a class="generic-button1" href="index.html">CREATED SPECIAL DRINKS</a>
-
+                                <p>Bountiful Foods is small business specializing in organic. We sell fruits and produce directly from the farmers in the area</p>
+                                <a class="generic-button1" href="fresh.html">CREATE SPECIALTY DRINK</a>
                             </div>
-
                         </div>
 
                         <div class="titled-divider">
-                            <h2>create a drink</h2>
+                            <h2>About Us</h2>
                         </div>
 
 
                         <div class="create-specialty-drink hero-call-to-action">
                             <div class="hero-call-left">
                                 <div id="confirmation-order" class="order-confirmation">
-                                    <div class="order-header">
-                                        <h2>Hi, There!</h2>
-                                        <p><em>You have not placed a new order yet!</em></p>
-                                        <p><em>Fill out the form in order to create a specialized drink</em></p>
-                                    </div>
+                                    <p>Bountiful Foods is small business specializing in organic, locally grown foods. </p>
+                                    <p>They are physically located in Carlsbad, California, however, they have many food trucks that cover the coastal area from Los Angeles to San Diego.</p>
+                                    <p>The company sells fruits and produce directly from the farmers in the area, but also uses some national and international suppliers. </p>
+                                    <p>The owner-operated company caters to walk in traffic at their storefront in Carlsbad and, of course, their food trucks. </p>
+                                    <p>They deliver and manage those orders on the phone and via the website. </p>
+                                    <p>The mission is to provide fresh and healthy food options, including organic, made to order, fruit drinks and fruit bags, to the local population and to tourists visiting the coastal areas. The theme should support healthy eating, organic bounty, and convenience</p>
 
-                                <!--
-                                    <div class="order-header">
-                                        <h2>Hi, Greg</h2>
-                                        <p><em>Thank you for your order</em></p>
-                                    </div>
-                                    <div class="customer-info">
-                                        <h2>Customer Information</h2>
-                                        <p>Jeevee Greg Azores</p>
-                                        <p>daddygreggy09@gmail.com</p>
-                                        <p>09657748476</p>
-                                    </div>
-                                    <div class="order-details">
-                                        <h2>Order Details</h2>
-                                        <p class="date"><em>December 15, 2022</em></p>
-                                        <div class="selected-fruits">
-                                            <h3>Selected Fruits</h3>
-                                            <ul>
-                                                <li>Apple</li>
-                                                <li>Mango</li>
-                                                <li>Orange</li>
-                                            </ul>
-                                        </div>
 
-                                        <div class="nutrition-facts">
-                                            <h3>Nutrition Facts</h3>
-                                            <ul>
-                                                <li>Carbohydrates</li>
-                                                <li>Protein</li>
-                                                <li>Fat</li>
-                                                <li>Sugar</li>
-                                                <li>Calories</li>
-                                            </ul>
-                                        </div>
-                                        
-                                        <h3>Special Instructions</h3>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti distinctio aperiam adipisci consectetur, eum voluptates rem beatae quae soluta ab iusto atque blanditiis reprehenderit nisi similique ex, id recusandae totam!</p>
-                                
-                                    </div>
-                                -->
+                            
                                 </div>
 
 
                             </div>
                             <div class="hero-call-right">
-                                <form action="#confirmation-order" method="get" class="create-specialty-drink-form" onsubmit="createOrder(event)">
-                                    <label id="fname" class="req">First Name <span class="req-star">*</span><input type="text" name="fname" placeholder="First Name" required></label>
-                                    <label id="lname" class="req">Last Name <span class="req-star">*</span><input type="text" name="lname" placeholder="Last Name" required></label>
-                                    <label id="email" class="req">Email <span class="req-star">*</span><input type="email" name="email" placeholder="email@domain.com" required></label>
-                                    <label id="phone-num" class="req">Phone <span class="req-star">*</span><input type="tel" name="phone" placeholder="09657748476" required></label>
-                                    <label id="fruit1" class="req">Fruit 1 <span class="req-star">*</span>
-                                        <select name="fruit1" class="select-fruits" required>
-                                            <option value="">Please Select</option>
-                                        </select>
-                                    </label>
-                                    <label id="fruit2" class="req">Fruits 2 <span class="req-star">*</span>
-                                        <select name="fruit2" class="select-fruits" required>
-                                            <option value="">Please Select</option>
-                                        </select>
-                                    </label>
-                                    <label id="fruit3" class="req">Fruit 3 <span class="req-star">*</span>
-                                        <select name="fruit3" class="select-fruits" required>
-                                            <option value="">Please Select</option>
-                                        </select>
-                                    </label>
-                                    <label id="msg" class="business-info"><span>Add Special Instructions</span><textarea class="text-box" name="tbox" cols="6" rows="5"></textarea></label>
 
-                                    <label id="create-drink-button" class="submit-button"><input class="generic-button1" type="submit" value="ORDER NOW!"></label>
-                                </form>
+                                <div class="footer-left">
+                                    <h2>
+                                        CONTACT US
+                                    </h2>
+                                    <h3>Carlsbad, California</h3>
+                                    <ul>
+                                        <li>📧 info@bountiful.com</li>
+                                        <li>📞 +63 965 7748476</li>
+                                    </ul>
+            
+                                    <ul class="footer-socials">
+                                        <li><a href="https://www.facebook.com/"><img src="images/facebookwhtsmall.png" alt="social media icons" width="30"></a></li>
+                                        <li><a href="https://twitter.com/i/flow/login"><img src="images/twitterwhtsmall.png" alt="social media icons" width="30"></a></li> 
+                                        <li><a href="https://www.youtube.com/"><img src="images/youtubewhtsmall.png" alt="social media icons" width="30"></a></li>
+                                        <li><a href="https://www.instagram.com/"><img src="images/instawhtsmall.png" alt="social media icons" width="30"></a></li>
+                                    </ul>
+            
+                                </div>
+                                
 
                             </div>
 
                         </div>
 
+                    </section>
+
+                    <section class="map-section blog-section hero-section">
+                        <div class="blog-wrapper hero-section-wrapper">
+                            <div class="blog-hero-image hero-image-container">
+                                <picture class="responsive-image">
+                                    <source media="(max-width:500px)" srcset="images/carlsbad.png">
+                                    <source media="(max-width:850px)" srcset="images/carlsbad.png">
+                                    <img src="images/carlsbad.png" alt="Southern California Beach">
+                                </picture>
+                            </div>
+
+                        </div>
                     </section>
 
 
@@ -207,6 +178,5 @@
 
         </div>
         <script src="scripts/script.js" async defer></script>
-        <script src="scripts/drink.js" async defer></script>
     </body>
 </html>

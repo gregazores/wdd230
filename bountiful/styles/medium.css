@@ -156,6 +156,10 @@
     }
 
     /* *****FRESH PAGE STYLING***** */
+    .fresh-page.home-page .hero-section .hero-section-wrapper {
+        height: 35vh
+    }
+
     .fresh-page .create-specialty-drink.hero-call-to-action .hero-call-left {
         display: block;
     }
@@ -181,6 +185,8 @@
     .about-us.fresh-page.fresh-page .create-specialty-drink.hero-call-to-action .hero-call-right .footer-left .footer-socials {
         justify-content: center;
     }
+
+    /* *****THANK YOU PAGE STYLING***** */
 
 
 

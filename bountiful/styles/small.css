@@ -85,6 +85,11 @@
         margin-bottom: 20px;
     }
 
+    .weather-section.generic-section .city-name h2 {
+        text-align: center;
+        line-height: 3rem;
+    }
+
     .current-weather-info .current-contents {
         width: 100%;
     }

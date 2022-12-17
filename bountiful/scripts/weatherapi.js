@@ -116,7 +116,7 @@ function forecastWeather(weatherList) {
         const foreDt = new Date(weatherList[i*8].dt * 1000)
         forecastDate[i-1].innerHTML =`${days[foreDt.getDay()][1]}`
         foreTimeStamp[i-1].innerHTML =`${weatherList[i*8].dt_txt}`
-        console.log(weatherList[i*8])
+        //console.log(weatherList[i*8])
     }   
     
 }
@@ -185,27 +185,3 @@ document.querySelector('#clear-orders').addEventListener('click', (() => {
 
 
 
-/*
-
-    weatherList.forEach( (w) => {
-        
-        if (cntr == 0) {
-            console.log('passed')
-        } 
-        
-        if (cntr > 0) {
-        console.log('not passed')
-        forecastWeatherIcon[cntr-1].setAttribute('src', `images/weather_icons/${w.weather[0].icon}.png`)
-        forecastWeatherTemp[cntr-1].innerHTML = `${w.main.temp.toFixed(0)}°F`
-        forecastWeatherHeader[cntr-1].innerHTML =`${w.weather[0].description}`
-        const foreDt = new Date(w.dt * 1000)
-        forecastDate[cntr-1].innerHTML =`${days[foreDt.getDay()][1]}`
-        console.log(w.dt)
-        }
-
-        cntr += 1
-    })
-
-
-
-*/

@@ -6,6 +6,11 @@
     * {
         font-size: 18px;
     }
+    /* Generic Header Styling */
+
+    .site-logo {
+        width: 50%;
+    }
 
     /* Generic Footer Styling */
 
@@ -39,6 +44,10 @@
     }
 
     /* *****HOME PAGE STYLING***** */
+    .order-header {
+        text-align: center;
+    }
+    
     .home-page .hero-section .hero-section-wrapper {
         height: 100vh;
         background-color: #F7F4EF;
@@ -74,6 +83,14 @@
 
     .current-weather-info .current-contents {
         width: 100%;
+    }
+
+    .current-weather-info .temps.current-contents h3 span {
+        margin-right: 50px;
+    }
+
+    #wind-chill {
+        margin-top: 100px;
     }
 
     .weather-section.generic-section .three-day-forecast .day-forecast {

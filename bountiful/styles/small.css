@@ -26,7 +26,60 @@
         width: revert;
     }
 
-    
+    /* misc element styles */
+
+    .titled-divider h2 {
+        font-size: 2rem;
+        line-height: 2rem;
+        text-align: center;
+    }
+
+    .titled-divider h2::after {
+        display: none;
+    }
+
+    /* *****HOME PAGE STYLING***** */
+    .home-page .hero-section .hero-section-wrapper {
+        height: 100vh;
+        background-color: #F7F4EF;
+    }
+    .home-page .hero-section .hero-content-container h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 2rem;
+        color: #F7F4EF;
+    }
+
+    .order-history-section .order-flex-container .customer-orders {
+        width: 100%;
+    }
+
+    .blog-section.hero-section .hero-content-container h2 {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+    .blog-section .blog-articles.hero-call-to-action {
+        margin-top: 20px;
+    }
+
+    .blog-section .blog-articles.hero-call-to-action .article-container article {
+        width: 100%;
+    }
+
+    .blog-section .featured-blogs.blog-articles.hero-call-to-action .article-container article {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .current-weather-info .current-contents {
+        width: 100%;
+    }
+
+    .weather-section.generic-section .three-day-forecast .day-forecast {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 
 }
 

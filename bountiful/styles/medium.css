@@ -6,7 +6,7 @@
 
     /* *****UNIVERSAL STYLING***** */
     * {
-        font-size: 26px;
+        font-size: 22px;
     }
 
     /* header styles */
@@ -66,6 +66,14 @@
         top: 30px;
     }
 
+    /* misc element styles */
+
+    .titled-divider {
+        margin: 30px 0;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
     /* Generic Footer Styling */
 
     .footer-container {
@@ -91,7 +99,7 @@
 
     .home-page .hero-section .hero-section-wrapper {
         height: 80vh;
-        background-color: red;
+        background-color: #F7F4EF;
     }
 
     .home-page .hero-section .hero-content-container h1 {
@@ -123,6 +131,29 @@
         font-size: 1.2rem;
         line-height: 1.5rem;
     }
+
+    .order-history-section .order-flex-container .customer-orders {
+        width: 44%;
+    }
+
+    .blog-section .blog-articles.hero-call-to-action .article-container article {
+        width: 45%;
+        
+    }
+
+    .current-weather-info .current-contents {
+        width: 45%;
+        margin-bottom: 20px;
+
+    }
+
+    .weather-section.generic-section .three-day-forecast .day-forecast .forecast-desc {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+
+}
 
 
 

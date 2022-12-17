@@ -543,6 +543,7 @@ footer {
 .blog-section .blog-articles.hero-call-to-action .article-container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .blog-section .blog-articles.hero-call-to-action .article-container article {
@@ -631,6 +632,7 @@ footer {
 .current-weather-info {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .current-weather-info .current-contents {
@@ -695,6 +697,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .weather-section.generic-section .three-day-forecast .day-forecast p {

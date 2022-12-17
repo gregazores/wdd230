@@ -31,7 +31,7 @@
         z-index: 500;
         float: none;
         width: 100%;
-        height: -100%;
+        height: 100%;
         background-color: #342628;
         text-align: center;
     }
@@ -197,6 +197,6 @@
 
 
 
-}
+
 
 

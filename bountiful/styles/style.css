@@ -881,14 +881,21 @@ footer {
 }
 
 /* side right */
-
 .about-us.fresh-page.fresh-page .create-specialty-drink.hero-call-to-action .hero-call-right {
-    background-color: #778402;
-    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about-us.fresh-page.fresh-page .create-specialty-drink.hero-call-to-action .hero-call-right .map-section.blog-section.hero-section .hero-section-wrapper {
+    margin-top: 0;
 }
 
 
 .about-us.fresh-page.fresh-page .create-specialty-drink.hero-call-to-action .hero-call-right .footer-left {
+    margin-top: 50px;
+    background-color: #778402;
+    padding: 30px;
     width: 100%;
 }
 

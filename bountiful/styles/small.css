@@ -14,6 +14,10 @@
 
     /* Generic Footer Styling */
 
+    .footer-container {
+        flex-wrap: wrap;
+    }
+
     .footer-left, .footer-right {
         width: 100%;
         text-align: center;
@@ -47,7 +51,7 @@
     .order-header {
         text-align: center;
     }
-    
+
     .home-page .hero-section .hero-section-wrapper {
         height: 100vh;
         background-color: #F7F4EF;
@@ -96,6 +100,11 @@
     .weather-section.generic-section .three-day-forecast .day-forecast {
         width: 100%;
         margin-bottom: 20px;
+    }
+
+    /* *****FRESH PAGE STYLING***** */
+    .create-specialty-drink-form {
+        padding-left: 40px;
     }
 
 }

@@ -687,16 +687,35 @@ footer {
 .weather-section.generic-section .three-day-forecast .day-forecast {
     padding: 10px 0;
     width: 29%;
-    align-items: center;
     background-color: #342628;
+    
+}
+
+.weather-section.generic-section .three-day-forecast .day-forecast .forecast-desc {
     display: flex;
+    align-items: center;
     justify-content: space-evenly;
 }
 
 .weather-section.generic-section .three-day-forecast .day-forecast p {
     color: #F7F4EF;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     letter-spacing: .05rem;
+}
+
+.weather-section.generic-section .three-day-forecast .day-forecast .forecast-header {
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 10px; 
+    margin-bottom: 0;
+    font-size: 1.8rem;
+}
+
+.weather-section.generic-section .three-day-forecast .day-forecast .forecast-timestamp {
+    text-align: center;
+    font-size: .9rem;
+    margin: 3px 0;
+    font-weight: 100;
 }
 
 

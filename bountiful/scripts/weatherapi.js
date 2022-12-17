@@ -17,15 +17,16 @@ that will need to be modified/manipulated and assign them to const variables
 Now create an "url" variable using const that stores the 'https://api.openweathermap.org/...' 
 URL as demonstrated in in the API documentation given.
 */
-
-const url = 'https://api.openweathermap.org/data/2.5/forecast?q=Carlsbad&appid=1c04d13839472f4456588c22392bbf46&cnt=4&units=imperial';
+const days = [["Sunday", "SUN"], ["Monday", 'MON'], ["Tuesday", 'TUE'], ["Wednesday", 'WED'], ["Thursday", 'THUR'], ["Friday", 'FRI'], ["Saturday", 'SAT']];
+const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+const url = 'https://api.openweathermap.org/data/2.5/forecast?q=Carlsbad&appid=1c04d13839472f4456588c22392bbf46&units=imperial';
 
 async function apiFetch() {
     try {
       const response = await fetch(url);
       if (response.ok) {
         const data = await response.json();
-        console.log(data); // this is for testing the call
+        //console.log(data); // this is for testing the call
         displayResults(data);
       } else {
           throw Error(await response.text());
@@ -42,8 +43,6 @@ function displayResults(weatherData) {
     const currentHumid = document.querySelector('#humidity');
     const currentDay = document.querySelector('#day-today');
     const currentDate = document.querySelector('#current-day');
-    const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     const weatherIcon = document.querySelector('#weather-icon');
     
     //images
@@ -58,7 +57,7 @@ function displayResults(weatherData) {
     currentHumid.innerHTML = `💧 ${currentWeather.main.humidity.toFixed(0)}%`;
     //current date
     const dateToday = new Date(currentWeather.dt * 1000)
-    currentDay.innerHTML = days[dateToday.getDay()]
+    currentDay.innerHTML = days[dateToday.getDay()][0]
     currentDate.innerHTML = `${months[dateToday.getMonth()]} ${dateToday.getDate()}`
     //currentDate.innerHTML = `${months[dateToday.getMonth()]} ${dateToday.getDate()}, ${dateToday.getFullYear()}` //alternative date
     //weather description
@@ -68,7 +67,13 @@ function displayResults(weatherData) {
     windSpeed.innerHTML = `🌬️${currentWeather.wind.speed} mi/hr`
     //windChill
     const windChill = document.querySelector("#wind-chill")
-    windChill.innerHTML = `Feels Like ${computeWindChill(currentWeather.main.temp.toFixed(0), currentWeather.wind.speed)} °F`
+    let wndChll = computeWindChill(currentWeather.main.temp.toFixed(0), currentWeather.wind.speed)
+    if (wndChll == 'N/A') {
+        windChill.innerHTML = 'Wind Temperature'
+    } else {
+        windChill.innerHTML = `Feels Like ${computeWindChill(currentWeather.main.temp.toFixed(0), currentWeather.wind.speed)} °F`
+    }
+    
     //windChill.innerHTML = `${computeWindChill(49, 6)}` //--> this is test wind chill
 
     //change background color of weather section
@@ -90,8 +95,8 @@ function computeWindChill(temp, speed) {
     if (temp <= 50 && speed > 3) {
         let chill = 35.74 + (0.6215*temp) - (35.75*(speed**.16)) + (.4275*temp*(speed**.16))
         return `${Math.round(chill)}`
-    } else {
-        return `N/A` 
+    } else { 
+        return `N/A`
     }
   
 }
@@ -99,19 +104,25 @@ function computeWindChill(temp, speed) {
 function forecastWeather(weatherList) {
     const forecastWeatherIcon = document.querySelectorAll('.forecast-weather-icon')
     const forecastWeatherTemp = document.querySelectorAll('.forecast-temp')
-    console.log(weatherList)
-    console.log(forecastWeatherTemp)
-    let count = 0
-    weatherList.forEach( () => {
-        forecastWeatherIcon[count].setAttribute('src', `images/weather_icons/${weatherList[count + 1].weather[0].icon}.png`)
-        forecastWeatherTemp[count].innerHTML = `${weatherList[count + 1].main.temp.toFixed(0)}°F`
-        console.log(forecastWeatherTemp[count].innerHTML)
-        count += 1
-    })
+    const forecastWeatherHeader = document.querySelectorAll('.forecast-header') 
+    const forecastDate = document.querySelectorAll('.forecast-date')
+    const foreTimeStamp = document.querySelectorAll('.forecast-timestamp')
+    
+    for (let i=1; i < 4; i++) {
+
+        forecastWeatherIcon[i-1].setAttribute('src', `images/weather_icons/${weatherList[i*8].weather[0].icon}.png`)
+        forecastWeatherTemp[i-1].innerHTML = `${weatherList[i*8].main.temp.toFixed(0)}°F`
+        forecastWeatherHeader[i-1].innerHTML =`${weatherList[i*8].weather[0].description}`
+        const foreDt = new Date(weatherList[i*8].dt * 1000)
+        forecastDate[i-1].innerHTML =`${days[foreDt.getDay()][1]}`
+        foreTimeStamp[i-1].innerHTML =`${weatherList[i*8].dt_txt}`
+        console.log(weatherList[i*8])
+    }   
     
 }
 
 
+/* Order History Script inserted here */
 if (localStorage.length == 0) {
     document.querySelector('.order-history-section.generic-section .order-header').innerHTML = `
     <h2>Hi, There!</h2>
@@ -124,10 +135,9 @@ if (localStorage.length == 0) {
     <h2>Hi, ${localStorage[localKeys[0]].split(',', 1)}!</h2>
     <p><em>Thank you for your order! Visit our <a style="text-decoration: underline;" href="fresh.html">Fresh Page</a> to order for more!</em></p>
     `
-    console.log(localKeys)
+    
     localKeys.forEach((key) => {
         keyValues = localStorage[key].split(',')
-        console.log(keyValues)
         let customerOrd = document.createElement('div')
         customerOrd.classList.add('customer-orders')
         customerOrd.innerHTML = `
@@ -175,4 +185,27 @@ document.querySelector('#clear-orders').addEventListener('click', (() => {
 
 
 
+/*
 
+    weatherList.forEach( (w) => {
+        
+        if (cntr == 0) {
+            console.log('passed')
+        } 
+        
+        if (cntr > 0) {
+        console.log('not passed')
+        forecastWeatherIcon[cntr-1].setAttribute('src', `images/weather_icons/${w.weather[0].icon}.png`)
+        forecastWeatherTemp[cntr-1].innerHTML = `${w.main.temp.toFixed(0)}°F`
+        forecastWeatherHeader[cntr-1].innerHTML =`${w.weather[0].description}`
+        const foreDt = new Date(w.dt * 1000)
+        forecastDate[cntr-1].innerHTML =`${days[foreDt.getDay()][1]}`
+        console.log(w.dt)
+        }
+
+        cntr += 1
+    })
+
+
+
+*/

@@ -64,8 +64,9 @@ function createOrder(event) {
     const fruit1 = document.querySelector('#fruit1 select').value
     const fruit2 = document.querySelector('#fruit2 select').value
     const fruit3 = document.querySelector('#fruit3 select').value
-    let msg = document.querySelector('#msg textarea').value
-    console.log(msg.length)
+    let msg = document.querySelector('#msg textarea').value 
+    let orderNumber = new Date().getUTCMilliseconds();
+
     if (msg.length == 0) {
         msg = 'No special message specified.'
     }
@@ -77,13 +78,11 @@ function createOrder(event) {
     let sugar = 0
 
     const fruitArray = fruitData.filter((fruit) => {
-        console.log(fruit.name)
         if ([fruit1, fruit2, fruit3].includes(fruit.name)) {
             return fruit
         }
     })
 
-    console.log(fruitArray)
 
     fruitArray.forEach((fruit) => {
         carb += fruit.nutritions.carbohydrates
@@ -107,7 +106,7 @@ function createOrder(event) {
         <p>${phone}</p>
         </div>
         <div class="order-details">
-        <h2>Order Details</h2>
+        <h2>Order Details #${orderNumber}</h2>
         <p class="date"><em>${fulldateUK}</em></p>
         <div class="selected-fruits">
             <h3>Selected Fruits</h3>
@@ -137,14 +136,23 @@ function createOrder(event) {
         `
         //testing()
         document.querySelector('.fresh-page .create-specialty-drink.hero-call-to-action .hero-call-left .order-confirmation').innerHTML = orderHTML
-    
+        localStorage.setItem(orderNumber, [fname, fruit1, fruit2, fruit3, carb.toFixed(2), protein.toFixed(2), fat.toFixed(2), sugar.toFixed(2), calories.toFixed(2), fulldateUK]);
 }
 
 
 
 
 
+
+
 /*
+if (localStorage.hasOwnProperty('orderDetails') == false) {
+    localStorage.setItem('orderDetails', [])
+}
+
+localStorage.setItem('orderDetails', [1, 2, 3, 5])
+
+
 let x = 1
 
 window.onload = function() {testing()}

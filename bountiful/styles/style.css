@@ -492,6 +492,16 @@ footer {
     padding-left: 10px;
 }
 
+#clear-orders {
+    margin: 50px auto 0 auto;
+    border: 0;
+    background-color: transparent;   
+}
+
+#clear-orders:hover {
+    text-decoration: underline;
+}
+
 
 
 /* Home Page Blog Section */

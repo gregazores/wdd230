@@ -24,3 +24,6 @@ footer_copyright.innerHTML = footer_text
 
 
 
+
+
+

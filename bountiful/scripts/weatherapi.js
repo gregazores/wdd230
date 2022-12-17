@@ -112,6 +112,63 @@ function forecastWeather(weatherList) {
 }
 
 
+if (localStorage.length == 0) {
+    document.querySelector('.order-history-section.generic-section .order-header').innerHTML = `
+    <h2>Hi, There!</h2>
+    <p><em>You have no orders yet! Visit our <a style="text-decoration: underline;" href="fresh.html">Fresh Page</a> to create one!</em></p>
+    `
+    document.getElementById("clear-orders").style.display = "none";
+} else {
+    let localKeys = Object.keys(localStorage)
+    document.querySelector('.order-history-section.generic-section .order-header').innerHTML = `
+    <h2>Hi, ${localStorage[localKeys[0]].split(',', 1)}!</h2>
+    <p><em>Thank you for your order! Visit our <a style="text-decoration: underline;" href="fresh.html">Fresh Page</a> to order for more!</em></p>
+    `
+    console.log(localKeys)
+    localKeys.forEach((key) => {
+        keyValues = localStorage[key].split(',')
+        console.log(keyValues)
+        let customerOrd = document.createElement('div')
+        customerOrd.classList.add('customer-orders')
+        customerOrd.innerHTML = `
+                <div class="order-details">
+                    <h2>Order #${key}</h2>
+                    <p class="date"><em>${keyValues[10]}</em></p>
+                    <div class="selected-fruits">
+                        <h3>Selected Fruits</h3>
+                        <ul>
+                            <li>${keyValues[1]}</li>
+                            <li>${keyValues[2]}</li>
+                            <li>${keyValues[3]}</li>
+                        </ul>
+                    </div>
+
+                    <div class="nutrition-facts">
+                        <h3>Nutrition Facts</h3>
+                        <ul>
+                            <li>Carbohydrates ${keyValues[4]}</li>
+                            <li>Protein ${keyValues[5]}</li>
+                            <li>Fat ${keyValues[6]}</li>
+                            <li>Sugar ${keyValues[7]}</li>
+                            <li>Calories ${keyValues[8]}</li>
+                        </ul>
+                    </div>
+                </div>
+        `
+
+        document.querySelector('.order-history-section.generic-section .order-flex-container').append(customerOrd)
+        document.getElementById("clear-orders").style.display = "block";
+    })
+
+
+}
+
+document.querySelector('#clear-orders').addEventListener('click', (() => {
+    location.reload();
+    localStorage.clear()  
+}))
+
+
 
 
 
